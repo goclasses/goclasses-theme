@@ -28,7 +28,7 @@
           <li><a href="#">Entrar</a></li>
         </ul>
       </nav>
-      <div class="lupa grid-1"><img src="<?php echo get_template_directory_uri(); ?>/img/lupa.svg" alt="Lupa"></div>
+      <div class="lupa grid-1"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/lupa.svg" alt="Lupa"></a></div>
     </div>
   </header>
 
