@@ -7,3 +7,66 @@ Description: Tema para o projeto GoClasses da UTFPR-SH
 Version: 1.0
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Estilos Gerais */
+
+body {
+  font-family: Nunito, sans-serif;
+  color: #121314;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #121314;
+}
+
+/* Header */
+
+.header {
+  background: #001133;
+  padding: 5px 0;
+}
+
+.header nav {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.header ul li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.header nav a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.875em;
+}
+
+.current-menu-item a::after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: auto;
+  background: #fff;
+}
+
+.header li:last-child a{
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.lupa img {
+  float: right;
+  margin-top: 10px;
+}

@@ -8,12 +8,28 @@
   <?php wp_head(); ?>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/grid.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/inicio.css">
 
 </head>
 
+  <header class="header">
+    <div class="container">
+      <div class="logo grid-2"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_nome.svg" alt="Logo GoClasses"></div>
+      <nav class="grid-9">
+        <ul>
+          <li class="current-menu-item"><a href="#">Quem Somos</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Materiais didáticos</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Entrar</a></li>
+        </ul>
+      </nav>
+      <div class="lupa grid-1"><img src="<?php echo get_template_directory_uri(); ?>/img/lupa.svg" alt="Lupa"></div>
+    </div>
+  </header>
 
 <body>
