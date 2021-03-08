@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/inicio.css">
 
+  <!-- JS -->
+  <script>document.documentElement.classList.add("js");</script>
+
 </head>
 
   <header class="header">

@@ -1,0 +1,22 @@
+.carrossel {
+  color: #fff;
+  background: #000;
+}
+
+.carrossel h2 {
+  font-family: 'Varela Round';
+  font-size: 2.25em;
+  margin-top: 90px;
+}
+
+.carrossel p {
+  font-size: 0.875em;
+  margin: 20px 0 40px 0;
+  max-width: 350px;
+}
+
+.noticia-1, .noticia-2, .noticia-3 {
+  height: 420px;
+  background: url("../img/slider-1.jpg") no-repeat center;
+  background-size: cover;
+}
