@@ -1,0 +1,66 @@
+.cabecalho{
+    height: 220px;
+    background: url("../img/Cabe-QS.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.cabecalho h1{ 
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    padding-top:75px ;
+}
+
+.missao_sobre{
+    padding-top: 60px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: .1em; 
+    padding-bottom: 60px;
+}
+
+.icone_equipe{ 
+    float: right;
+}
+
+.perfil_equipe{
+    padding-top: 60px;   
+    background: #0D2759;
+    height: 480px;
+}
+
+.teste{
+    display: block;
+    margin: 0 auto;
+}
+
+.perfil_equipe h2{
+    padding-top: 5px; 
+    text-align: center;
+    font-size: 22px;
+    color: white;   
+}
+
+.perfil_equipe h3{
+    padding-top: 0px; 
+    text-align: center;
+    font-size: 10px;
+    color: white;   
+}
+
+.perfil_equipe p{
+    padding-top: 5px;  
+    text-align: center;
+    font-size: 13px;
+    color: white;   
+}
+
+.perfil_equipe h3::before{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 1px;
+    background: white ;
+    margin: 3px auto;
+}
