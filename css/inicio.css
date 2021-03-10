@@ -1,6 +1,8 @@
+/* Carrossel */
+
 .carrossel {
   color: #fff;
-  background: #000;
+  background: #001133;
 }
 
 .carrossel h2 {
@@ -19,4 +21,83 @@
   height: 420px;
   background: url("../img/slider-1.jpg") no-repeat center;
   background-size: cover;
+}
+
+/* Sobre */
+
+.sobre-inicio {
+  padding-bottom: 60px;
+}
+
+.sobre-inicio h2 {
+  font-family: 'Varela Round';
+  font-size: 2.25em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.sobre-inicio p {
+  font-size: 1.125em;
+  max-width: 450px;
+}
+
+.logo-sobre img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Materiais */
+
+.materiais-inicio {
+  background: #013;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.materiais-3 {
+  display: block;
+  margin: 0 auto;
+}
+
+.materiais-inicio h2 {
+  font-family: 'Varela Round';
+  font-size: 2.25em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+}
+
+.material-individual {
+  padding: 30px 0;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 270px;
+  height: 300px;
+}
+
+.imagem-material img {
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
+.material-individual h3 {
+  font-family: 'Varela Round';
+  font-size: 1.125em;
+  text-transform: uppercase;
+  max-width: 160px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+div.materiais-3 div.grid-4:last-child > div {
+  float: right;
+}
+
+div.materiais-3 div.grid-4:nth-child(2) > div {
+  display: block  ;
+  margin: 0 auto;
 }
