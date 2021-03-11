@@ -88,6 +88,75 @@
 </section>
 <!-- Materiais termina -->
 
+<!-- Ultimos projetos e posts começa -->
+<section class="container ultimos">
+  <div class="ultimos-posts grid-6">
+    <h2>últimos posts</h2>
+
+    <div class="ultimo-po-individual">
+      <h3>post 1</h3>
+      <p class="ultimo-post-ind-info">John Doe - 10/03/2021</p>
+      <p class="ultimo-post-ind-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      </p>
+      <a href="#" class="botao-red-cinza">leia mais</a>
+    </div>
+
+    <div class="ultimo-po-individual">
+      <h3>post 2</h3>
+      <p class="ultimo-post-ind-info">John Doe - 10/03/2021</p>
+      <p class="ultimo-post-ind-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      </p>
+      <a href="#" class="botao-red-cinza">leia mais</a>
+    </div>
+
+    <div class="ultimo-po-individual">
+      <h3>post 3</h3>
+      <p class="ultimo-post-ind-info">John Doe - 10/03/2021</p>
+      <p class="ultimo-post-ind-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      </p>
+      <a href="#" class="botao-red-cinza">leia mais</a>
+    </div>
+
+  </div>
+
+  <div class="ultimos-projetos grid-6">
+    <h2>últimos projetos</h2>
+
+    <div class="ultimo-po-individual">
+      <h3>projeto 1</h3>
+      <p class="ultimo-post-ind-info">John Doe - 10/03/2021</p>
+      <p class="ultimo-post-ind-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      </p>
+      <a href="#" class="botao-red-cinza">leia mais</a>
+    </div>
+
+    <div class="ultimo-po-individual">
+      <h3>projeto 2</h3>
+      <p class="ultimo-post-ind-info">John Doe - 10/03/2021</p>
+      <p class="ultimo-post-ind-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      </p>
+      <a href="#" class="botao-red-cinza">leia mais</a>
+    </div>
+
+    <div class="ultimo-po-individual">
+      <h3>projeto 3</h3>
+      <p class="ultimo-post-ind-info">John Doe - 10/03/2021</p>
+      <p class="ultimo-post-ind-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      </p>
+      <a href="#" class="botao-red-cinza">leia mais</a>
+    </div>
+
+  </div>
+</section>
+<!-- Ultimos projetos e posts termina -->
+
+
 <!-- JavaScript -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/simple-slide.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>

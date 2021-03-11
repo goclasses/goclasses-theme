@@ -101,3 +101,52 @@ div.materiais-3 div.grid-4:nth-child(2) > div {
   display: block  ;
   margin: 0 auto;
 }
+
+/* Ultimos */
+
+.ultimos {
+  padding: 60px 0;
+}
+
+.ultimos h2 {
+  text-transform: uppercase;
+  font-family: 'Varela Round';
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+.ultimos h2::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: auto;
+  background: #121314;
+}
+
+.ultimos h3 {
+  text-transform: uppercase;
+  font-family: 'Varela Round';
+  font-size: 1.125em;
+}
+
+.ultimo-po-individual {
+  margin-top: 30px;
+  max-width: 250px;
+  padding-left: 10px;
+  border-left: 1px solid #121314;
+}
+
+.ultimo-po-individual a {
+  margin: 10px 0;
+}
+
+.ultimo-post-ind-info {
+  margin: 5px 0;
+  color: #28292C;
+  font-style: italic;
+  font-size: 0.875em;
+}
+
+.ultimo-post-ind-desc {
+  margin: 10px 0;
+}

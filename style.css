@@ -38,6 +38,15 @@ a.botao-red {
   border-radius: 50px;
 }
 
+a.botao-red-cinza {
+  color: #121314;
+  font-size: 0.875em;
+  padding: 5px 10px;
+  border: 1px solid #121314;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
 /* Header */
 
 .header {
