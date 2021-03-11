@@ -38,6 +38,15 @@ a.botao-red {
   border-radius: 50px;
 }
 
+a.botao-red-cinza {
+  color: #121314;
+  font-size: 0.875em;
+  padding: 5px 10px;
+  border: 1px solid #121314;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
 /* Header */
 
 .header {
@@ -87,17 +96,80 @@ a.botao-red {
   margin-top: 10px;
 }
 
+/* Footer */
 
+.footer {
+  color: #fff;
+}
 
+.footer-fundo {
+  background: #001133;
+  padding: 30px 0; 
+}
 
+.footer a {
+  color: #fff;
+}
 
+.footer h2 {
+  font-family: 'Varela Round';
+  text-transform: uppercase;
+  font-size: 1.125em;
+  display: inline-block;
+  margin-bottom: 15px;
+}
 
+.footer h2::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: auto;
+  background: #fff;
+}
 
+.goclasses-footer-logo img {
+  width: 223px;
+  height: 64px;
+}
 
+.goclasses-footer-logo, .utfpr-footer-logo {
+  margin-bottom: 20px;
+}
 
+.links-uteis {
+  max-height: 130px;
+}
 
+.links-uteis li {
+  margin-top: 10px;
+  width: 50%;
+  float: left
+}
 
+.contato-footer p {
+  margin-top: 10px;
+}
 
+.github-redes, .facebook-redes, .instagram-redes {
+  display: inline-block;
+}
+
+.links-redes-contato {
+  margin-top: 20px;
+  max-width: 170px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.copy {
+  background: #081F4D;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.copy p {
+  font-size: 1.125em;
+}
 
 /* JavaScript */
 /* Adicione o CSS Essencial abaixo */
