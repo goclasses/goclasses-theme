@@ -18,7 +18,7 @@
       </div>
     </div>
   </div>
-  <div class="noticia-1">
+  <div class="noticia-2">
     <div class="grid-12">
       <div class="container">
           <h2>GoClasses source code</h2>
@@ -27,7 +27,7 @@
       </div>
     </div>
   </div>
-  <div class="noticia-1">
+  <div class="noticia-3">
     <div class="grid-12">
       <div class="container">
           <h2>GoClasses source code</h2>

@@ -49,28 +49,62 @@ a.botao-red-cinza {
 
 /* Header */
 
+.header::after, .header::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
 .header {
+  width: 100%;
+  height: auto;
   background: #001133;
-  padding: 5px 0;
+  position: relative;
+  left: 0;
+  padding: 10px 0;
 }
 
-.header nav {
-  text-align: center;
-  padding-top: 15px;
-}
-
-.header ul li{
+.logo, .navegacao_header, .search-icon {
+  margin-right: 15px;
+  margin-left: 15px;
   display: inline-block;
+  min-height: 1px;
+  width: fit-content;
+}
+
+.header > nav {
+  width: calc(100% - 300px);
+}
+
+.header > nav > ul {
+  list-style-type: none;
+  display: table;
+  position: relative;
+  bottom: 7.5px;
+  margin: 0 auto; 
+}
+
+.header > nav > ul > li {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  transition: all 0.3s;
   margin-left: 20px;
 }
 
-.header nav a {
+.header > nav > ul > li:first-child {
+  margin-left: 0px;
+}
+
+.header > nav > ul > li > a {
   color: #fff;
   text-transform: uppercase;
   font-size: 0.875em;
+  display: inline-block;
+  margin: 0;
 }
 
-.current-menu-item a::after, .header nav li:not(:last-child) a:hover::after{
+.current-menu-item a::after, .header > nav > ul > li:not(:last-child) > a:hover::after{
   content: '';
   display: block;
   height: 1px;
@@ -78,22 +112,172 @@ a.botao-red-cinza {
   background: #fff;
 }
 
-.header li:last-child a{
+.header > nav > ul > li:last-child > a{
   padding: 5px 15px;
   border: 1px solid #fff;
   border-radius: 20px;
 }
 
-.header li:last-child a:hover {
+.header > nav > ul > li:last-child > a:hover {
   border: 1px solid #001133;
   background: #fff;
   color: #001133;
   transition: 0.25s;
 }
 
-.lupa img {
+#bc2 {
+  display: none;
+}
+
+.search-icon i {
+  position: absolute;
+  float: left;
+  right: 15px;
+  bottom: 5px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.search-icon i.fa-close {
+  visibility: hidden;
+}
+
+.search-box {
+  position: absolute;
+  float: left;
+  background: #081F4C;
+  right: 15px;
+  top: -80px;
+  width: 300px;
+  height: 58px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0, .05);
+  transition: all 0.17s ease;
+  z-index: 99;
+}
+
+.search-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent ;
+  border-bottom-color: #081F4C;
+  margin: -20px 0 0;
+}
+
+form {
+  width: 100%;
+  height: 38px;
+  right: 0;
+  background-color: #00113308;
+  display: flex;
+  overflow: hidden;
+  padding: 2px;
+  border: 1px solid #f1f5fd33;
+  border-radius: 4px;
+}
+
+.search {
+  width: 95%;
+  background-color: #00000000;
+  color: #fff;
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  outline: none;
+}
+
+.sub {
+  font-size: 14px;
+  padding: 0 13px;
+  border: 0;
+  background-color: #fff;
+  color: #081f4c;
+  border-radius: 4px;
+  border: 1px solid #081F4C;
+  cursor: pointer;
+}
+
+.sub:hover {
+  background-color: #001133;
+  color: #fff;
+  border: 1px solid #001133;
+}
+
+#bc2:checked ~ .search-box {
+  top: 75px;
+}
+#bc2:checked ~ .search-icon i.fa-search {
+  display: none;
+}
+#bc2:checked ~ .search-icon i.fa-close {
+  visibility: visible;
+}
+
+.header > nav > ul > li.parent > a::after, .header > nav > ul > li.parent:hover > a::after {
+  content: '\f107';
+  font-family: FontAwesome;
   float: right;
-  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header > nav > ul > li > ul {
+  position: absolute;
+  background: #081f4c;
+  top: 100%;
+  left: 0;
+  min-width: 300px;
+  padding: 0;
+  z-index: 100;
+  margin-top: 0;
+  transform: translateY(10px);
+  transition: all 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header > nav > ul > li > ul > li {
+  display: block;
+  float: none;
+  text-align: left;
+  position: relative;
+  border-bottom: 1px solid #fff;
+  border-top: none;
+  border-color: #555d7d;
+  padding: 0 10px;
+}
+
+.header > nav > ul > li > ul > li > a {
+  font-size: 0.875em;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  padding: 10px 0;
+  border-right: 0;
+  border: 0;
+}
+
+.header > nav > ul > li > ul > li:hover {
+  background: #001133;
+}
+
+.header > nav > ul > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(10px);
 }
 
 /* Footer */
