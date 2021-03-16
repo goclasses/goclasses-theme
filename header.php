@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/inicio.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/quemsomos.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/projetos.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material.css">
 
   <!-- JS -->
   <script>document.documentElement.classList.add("js");</script>
