@@ -38,7 +38,7 @@ a.botao-red {
   border-radius: 50px;
 }
 
-a.botao-red-cinza {
+a.botao-red-cinza, button.botao-red-cinza {
   color: #121314;
   font-size: 0.875em;
   padding: 5px 10px;
@@ -174,7 +174,7 @@ a.botao-red-cinza {
   margin: -20px 0 0;
 }
 
-form {
+.form-search {
   width: 100%;
   height: 38px;
   right: 0;
