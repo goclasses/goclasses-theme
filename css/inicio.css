@@ -17,14 +17,16 @@
   max-width: 350px;
 }
 
-.noticia-1, .noticia-3 {
+.carrossel > div {
   height: 420px;
+}
+
+.noticia-1, .noticia-3 {
   background: url("../img/slider-1.jpg") no-repeat center;
   background-size: cover;
 }
 
 .noticia-2 {
-  height: 420px;
   background: url("../img/imagem-pc.jpg") no-repeat center;
   background-size: cover;
 }
@@ -155,4 +157,38 @@ div.materiais-3 div.grid-4:nth-child(2) > div {
 
 .ultimo-post-ind-desc {
   margin: 10px 0;
+}
+
+/* Responsivo */
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+  .material-individual {
+    width: 200px;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 739px) {
+
+  .carrossel > div {
+    height: 480px;
+  }
+
+  .sobre-inicio h2 {
+    margin-top: 30px;
+  }
+
+  .material-individual {
+    width: 300px;
+    float: left;
+  }
+
+  div.materiais-3 div.grid-4:nth-child(2) > div, div.materiais-3 div.grid-4:last-child > div {
+    margin-top: 30px;
+  }
+
+  .ultimos-projetos {
+    margin-top: 60px;
+  }
 }
