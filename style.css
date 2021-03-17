@@ -355,6 +355,18 @@ form {
   font-size: 1.125em;
 }
 
+/* Footer responsivo */
+
+@media (max-width: 739px) {
+  .contato-footer h2, .links-uteis {
+    margin-top: 45px;
+  }
+
+  .contato-footer {
+    float: left;
+  }
+}
+
 /* JavaScript */
 /* Adicione o CSS Essencial abaixo */
 [data-slide] {

@@ -44,13 +44,13 @@
 
         <div class="links-redes-contato">
           <div class="github-redes">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/github.svg" alt="github logo">
+            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/github.svg" alt="github logo"></a>
           </div>
           <div class="instagram-redes">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="instagram logo">
+            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="instagram logo"></a>
           </div>
           <div class="facebook-redes">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook logo">
+            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook logo"></a>
           </div>
         </div>
       </div>
