@@ -7,7 +7,7 @@
 
 <!-- Começa código da página -->
 
-<section class="cabecalho">
+<section class="cabecalho-contato">
   <div>
     <h1><?php the_title(); ?></h1>
   </div>

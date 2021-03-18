@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/inicio.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/quemsomos.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/author.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- JS -->

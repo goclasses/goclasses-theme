@@ -36,6 +36,7 @@ a.botao-red {
   border: 1px solid #fff;
   text-transform: uppercase;
   border-radius: 50px;
+  outline: none;
 }
 
 a.botao-red-cinza, button.botao-red-cinza {
@@ -45,6 +46,7 @@ a.botao-red-cinza, button.botao-red-cinza {
   border: 1px solid #121314;
   text-transform: uppercase;
   border-radius: 50px;
+  outline: none;
 }
 
 /* Header */
@@ -405,6 +407,7 @@ a.botao-red-cinza, button.botao-red-cinza {
   background: none;
   text-indent: -100px;
   overflow: hidden;
+  outline: none;
 }
 [data-slide-nav] > button.active {
   background: #fff;

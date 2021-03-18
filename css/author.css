@@ -1,0 +1,74 @@
+.cabecalho-perfil {
+  padding: 60px 0;
+  background: url("../img/cabecalho-perfil.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.perfil-info-principal {
+  display: table;
+  margin: 0 auto;
+}
+
+.cabecalho-perfil h1{ 
+  font-size: 2.25em;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Varela Round';
+  margin-left: 20px;
+  position: relative;
+  bottom: 35px;
+}
+
+.foto-perfil {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background: url("../img/perfil-author.jpg") no-repeat center;
+  border-radius: 50%;
+}
+
+.projetos-perfil {
+  padding: 60px 0;
+}
+
+.projetos-perfil h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: 'Varela Round';
+}
+
+.projeto-info h3 {
+  font-size: 1.5em;
+}
+
+.projeto-info {
+  margin-top: 10px;
+  max-width: 250px;
+  padding-left: 10px;
+  border-left: 1px solid #121314;
+}
+
+.projeto-info a {
+  margin: 10px 0;
+}
+
+.info-projeto-ind {
+  margin: 5px 0;
+  color: #28292C;
+  font-style: italic;
+  font-size: 0.875em;
+}
+
+.sobre-projeto-ind {
+  margin: 10px 0;
+}
+
+/* Repsonsivo */
+
+@media (max-width: 739px) {
+  .projeto-ind {
+    padding-bottom: 60px;
+  }
+}

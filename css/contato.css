@@ -1,10 +1,10 @@
-.cabecalho{
+.cabecalho-contato{
   height: 220px;
   background: url("../img/bg-contato.jpg") no-repeat center;
   background-size: cover;
 }
 
-.cabecalho h1{ 
+.cabecalho-contato h1{ 
   text-align: center;
   font-size: 36px;
   text-transform: uppercase;
