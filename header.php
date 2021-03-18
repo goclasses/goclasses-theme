@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/projetos.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/author.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- JS -->
   <script>document.documentElement.classList.add("js");</script>
@@ -24,11 +27,11 @@
 </head>
 
   <header class="header">
-      <div class="logo"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_nome.svg" alt="Logo GoClasses"></a></div>
+      <div class="logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_nome.svg" alt="Logo GoClasses"></a></div>
       <nav class="navegacao_header">
         <ul>
-          <li class="current-menu-item"><a href="#">Quem Somos</a></li>
-          <li><a href="#">Projetos</a></li>
+          <li class="current-menu-item"><a href="/quemsomos">Quem Somos</a></li>
+          <li><a href="/projetos">Projetos</a></li>
           <li class="parent">
             <a href="#">Materiais didáticos</a>
             <ul>
@@ -37,7 +40,7 @@
               <li><a href="#">Programação Paralela e Distribuída</a></li>
             </ul>
           </li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="/contato">Contato</a></li>
           <li><a href="#">Entrar</a></li>
         </ul>
       </nav>
@@ -47,7 +50,7 @@
         <i class="fa fa-close"></i>
       </label>
       <div class="search-box">
-        <form>
+        <form class="form-search">
           <input type="search" placeholder="Pesquisar" class="search" required>
           <input type="submit" value="IR" class="sub">
         </form>

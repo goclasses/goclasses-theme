@@ -1,0 +1,92 @@
+.cabecalho-contato{
+  height: 220px;
+  background: url("../img/bg-contato.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.cabecalho-contato h1{ 
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: white;
+  padding-top:75px ;
+}
+
+.contato {
+  padding: 60px 0;
+}
+
+/* Form */
+
+.contato_form label{
+	display: block;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.125em;
+	line-height: 25px;
+	margin-bottom: 4px;
+}
+
+.contato_form input {
+	display: block;
+	width: 100%;
+	border: 2px solid #0D2759;
+	background: none;
+	padding: 7px 10px;
+	margin-bottom: 10px;
+	outline: none;
+	font-size: 0.875em;
+	font-family: 'Varela Round', sans-serif;
+  border-radius: 10px;
+}
+
+.contato_form textarea {
+	display: block;
+	width: 100%;
+	height: 100px;
+	border: 2px solid #0D2759;
+  border-radius: 10px;
+	background: none;
+	padding: 7px 10px;
+	margin-bottom: 20px;
+	outline: none;
+	font-size: 0.875em;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.contato_form button {
+  background: #fff;
+  color: #0D2759;
+  border: 2px solid #0D2759;
+}
+
+/* Redes Sociais */
+
+.contato-info h3{
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  font-family: 'Varela Round';
+}
+
+.contato-info h3.siga {
+  margin-top: 30px;
+}
+
+.contato-info .links-redes-contato > div{
+  background: #0D2759;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 5px 0 0 5px;
+}
+
+.contato-info .links-redes-contato {
+  max-width: 220px;
+}
+
+/* Repsonsivo */
+
+@media (max-width: 739px) {
+  .contato-info {
+    padding-top: 30px;
+  }
+}

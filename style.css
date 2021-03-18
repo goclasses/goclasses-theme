@@ -36,15 +36,17 @@ a.botao-red {
   border: 1px solid #fff;
   text-transform: uppercase;
   border-radius: 50px;
+  outline: none;
 }
 
-a.botao-red-cinza {
+a.botao-red-cinza, button.botao-red-cinza {
   color: #121314;
   font-size: 0.875em;
   padding: 5px 10px;
   border: 1px solid #121314;
   text-transform: uppercase;
   border-radius: 50px;
+  outline: none;
 }
 
 /* Header */
@@ -174,7 +176,7 @@ a.botao-red-cinza {
   margin: -20px 0 0;
 }
 
-form {
+.form-search {
   width: 100%;
   height: 38px;
   right: 0;
@@ -355,6 +357,18 @@ form {
   font-size: 1.125em;
 }
 
+/* Footer responsivo */
+
+@media (max-width: 739px) {
+  .contato-footer h2, .links-uteis {
+    margin-top: 45px;
+  }
+
+  .contato-footer {
+    float: left;
+  }
+}
+
 /* JavaScript */
 /* Adicione o CSS Essencial abaixo */
 [data-slide] {
@@ -393,6 +407,7 @@ form {
   background: none;
   text-indent: -100px;
   overflow: hidden;
+  outline: none;
 }
 [data-slide-nav] > button.active {
   background: #fff;
