@@ -14,9 +14,9 @@
     
     <section class="material">
         <h1>Linguagem De Programação Estruturada</h2>
-        <div class=container>
+        <div class="container part1">
 
-            <div class="grid-4">
+            <div class="grid-4 espacamento">
                 <div class="imagem-fundo">
                     <h6>ARTIGOS E PUBLICAÇÕES</h6>
                     <div class="imagem-material">
@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <div class="grid-4">
+            <div class="grid-4 espacamento">
                 <div class="imagem-fundo">
                     <h6>ASSUNTOS REVELANTES</h6>
                     <div class="imagem-material">
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="grid-4">
+            <div class="grid-4 espacamento">
                 <div class="imagem-fundo">
                     <h6>MATERIAIS DIDATICOS</h6>
                     <div class="imagem-material">
@@ -52,7 +52,7 @@
 
     <section class="material part2">
         <div class=container>
-            <div class="grid-4">
+            <div class="grid-4 espacamento">
                 <div class="imagem-fundo">
                     <h6>VÍDEOAULA GRAVADAS</h6>
                     <div class="imagem-material">
@@ -61,8 +61,8 @@
                     <h3>Aulas gravadas, Google Meet gravados e vídeos relacionados</h3>
                 </div>
             </div>
-
-            <div class="grid-4">
+ 
+            <div class="grid-4 espacamento">
                 <div class="imagem-fundo">
                     <h6>PLANO DE ENSINO</h6>
                     <div class="imagem-material">
@@ -72,7 +72,7 @@
                 </div>
             </div>
 
-            <div class="grid-4">
+            <div class="grid-4 espacamento">
                 <div class="imagem-fundo">
                     <h6>AVALIAÇÕES E SIMULADOS</h6>
                     <div class="imagem-material">

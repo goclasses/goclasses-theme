@@ -64,3 +64,71 @@
     background: white ;
     margin: 3px auto;
 }
+
+.campus{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.campus h6{
+    padding-top: 5px;  
+    text-align: right;
+    font-size: 36px;
+    color: #1C1D1F;
+}
+
+.campus h6::after{
+    content: "";
+    display: block;
+    float: right;
+    width: 640px;
+    height: 2px;
+    background: #1C1D1F ;
+    margin: 3px auto;
+}
+
+.campus p{
+    text-align: right;
+    font-size: 20px;
+
+}
+
+/**----------------------------Responsivo----------------------------**/
+
+/*Tablet*/
+@media only screen and (min-width:740px) and (max-width:979px){
+
+}
+/*Mobile*/
+@media only screen and (max-width:739px){
+    .cabecalho{
+        margin-top: 0px;
+    }
+
+    .icone_equipe img{
+        padding-top:40px ;
+        text-align: center;
+    }
+
+    .informativo{
+        width: 325px;
+    }
+
+    .perfil_equipe{
+        height: 1260px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .campus h6{
+        padding-top: 6px;  
+        font-size: 16px;
+    }
+    
+    .campus h6::after{
+        width: 300px;
+    }
+    .campus p{
+        font-size: 14px;
+    }
+}

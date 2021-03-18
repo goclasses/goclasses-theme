@@ -17,9 +17,15 @@
   max-width: 350px;
 }
 
-.noticia-1, .noticia-2, .noticia-3 {
+.noticia-1, .noticia-3 {
   height: 420px;
   background: url("../img/slider-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.noticia-2 {
+  height: 420px;
+  background: url("../img/imagem-pc.jpg") no-repeat center;
   background-size: cover;
 }
 

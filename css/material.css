@@ -52,3 +52,24 @@
     padding-top: 0px;
     padding-bottom: 60px;
 }
+
+/**----------------------------Responsivo----------------------------**/
+
+/*Tablet*/
+@media only screen and (min-width:740px) and (max-width:979px){
+
+}
+/*Mobile*/
+@media only screen and (max-width:739px){
+    .cabecalho{
+        margin-top: 0px;
+    }
+    .espacamento{
+        padding-bottom: 10px;
+    }
+    .material{
+        padding-bottom: 0px;
+        text-align: center;
+    }
+
+}
