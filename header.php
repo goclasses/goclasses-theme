@@ -33,7 +33,7 @@
           <li class="current-menu-item"><a href="/quemsomos">Quem Somos</a></li>
           <li><a href="/projetos">Projetos</a></li>
           <li class="parent">
-            <a href="#">Materiais didáticos</a>
+            <a href="/material">Materiais didáticos</a>
             <ul>
               <li><a href="#">Linguagem de Programação Estruturada</a></li>
               <li><a href="#">Comunicação de Dados</a></li>
