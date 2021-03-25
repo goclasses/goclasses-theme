@@ -15,8 +15,10 @@
         <div class="grid-7 informativo">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam erat volutpat. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Duis condimentum augue id magna.</p>
         </div>
-        <div class="grid-3 icone_equipe">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/equipe-de-trabalho.svg" alt="Icone Equipe">
+        <div class="grid-3">
+            <div class="icone_equipe">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/equipe-de-trabalho.svg" alt="Icone Equipe">
+            </div>
         </div>
     </section>
 
@@ -51,7 +53,7 @@
                 <img class="teste" src="<?php echo get_template_directory_uri(); ?>/img/campus.png" alt="">
             </div>
             <div class="grid-7 info-utf">
-                <h6>UM POUCO SOBRE A NOSSA UTFPR</h6>
+                <h3>UM POUCO SOBRE A NOSSA UTFPR</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
             </div>
         </div>

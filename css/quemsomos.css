@@ -35,6 +35,11 @@
     margin: 0 auto;
 }
 
+section.perfil_equipe > div.container > div.grid-4 > img{
+    width: 200px;
+    height: 200px;
+}
+
 .perfil_equipe h2{
     padding-top: 5px; 
     text-align: center;
@@ -70,65 +75,60 @@
     padding-top: 60px;
 }
 
-.campus h6{
+section.campus > div.container > div.info-utf{
+    text-align: right;
+}
+
+section.campus > div.container > div.info-utf > h3{
     padding-top: 5px;  
     text-align: right;
     font-size: 36px;
     color: #1C1D1F;
+    display: inline-block;
 }
 
-.campus h6::after{
+    
+section.campus > div.container > div.info-utf > h3::after{
     content: "";
     display: block;
-    float: right;
-    width: 640px;
+    width: auto;
     height: 2px;
     background: #1C1D1F ;
-    margin: 3px auto;
+    margin: 3px 0;
 }
 
 .campus p{
     text-align: right;
     font-size: 20px;
+    padding-top: 30px;
 
 }
 
 /**----------------------------Responsivo----------------------------**/
 
-/*Tablet*/
-@media only screen and (min-width:740px) and (max-width:979px){
-
-}
 /*Mobile*/
 @media only screen and (max-width:739px){
     .cabecalho{
         margin-top: 0px;
     }
 
-    .icone_equipe img{
-        padding-top:40px ;
-        text-align: center;
+    .icone_equipe img{ 
+        display: block;
+        padding-top: 40px;
     }
 
-    .informativo{
-        width: 325px;
+
+    .icone_equipe{
+        float: left;
+    }
+
+    section.perfil_equipe > div.container > div.grid-4{
+        padding-bottom: 30px;
     }
 
     .perfil_equipe{
-        height: 1260px;
+        height: auto;
         padding-top: 60px;
         padding-bottom: 60px;
-    }
-
-    .campus h6{
-        padding-top: 6px;  
-        font-size: 16px;
-    }
-    
-    .campus h6::after{
-        width: 300px;
-    }
-    .campus p{
-        font-size: 14px;
     }
 }

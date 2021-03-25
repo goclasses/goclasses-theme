@@ -15,14 +15,14 @@
     <section class="cursos">
         <h1>O CONHECIMENTO É COMPARTILHAVEL</h2>
         <div class=container>
-            <div class="grid-4">
+            <div class="grid-4 ">
                 <div class="imagem-fundo">
                     <div class="imagem-material">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/projetos/icon-1.png" alt="">
                     </div> 
                 
-                <h3>linguagem de programação estruturada</h3>
-                <a href="#" class="botao-red">Saiba mais</a>
+                    <h3>linguagem de programação estruturada</h3>
+                    <a href="#" class="botao-red">Saiba mais</a>
                 </div>
             </div>
 
@@ -32,8 +32,8 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/projetos/icon-2.png" alt="">
                     </div> 
                 
-                <h3>comunicação de dados</h3>
-                <a href="#" class="botao-red ">Saiba mais</a>
+                    <h3>comunicação de dados</h3>
+                    <a href="#" class="botao-red ">Saiba mais</a>
                 </div>
             </div>
 
@@ -43,8 +43,8 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/projetos/icon-3.png" alt="">
                     </div> 
                 
-                <h3>programação paralela e distribuída</h3>
-                <a href="#" class="botao-red ">Saiba mais</a>
+                    <h3>programação paralela e distribuída</h3>
+                    <a href="#" class="botao-red ">Saiba mais</a>
                 </div>
             </div>
         </div>

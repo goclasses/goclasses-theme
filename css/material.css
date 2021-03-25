@@ -57,6 +57,13 @@
 
 /*Tablet*/
 @media only screen and (min-width:740px) and (max-width:979px){
+    section.material > div.part1 > div.grid-4 > div.imagem-fundo{
+        width: 240px;
+    }
+    section.material > div.part2 > div.grid-4 > div.imagem-fundo{
+        width: 240px;
+    }
+
 
 }
 /*Mobile*/

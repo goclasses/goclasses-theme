@@ -50,8 +50,8 @@
 
     </section>
 
-    <section class="material part2">
-        <div class=container>
+    <section class="material">
+        <div class="container part2">
             <div class="grid-4 espacamento">
                 <div class="imagem-fundo">
                     <h6>VÍDEOAULA GRAVADAS</h6>
