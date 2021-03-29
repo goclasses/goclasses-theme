@@ -19,42 +19,43 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/author.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
   <!-- JS -->
   <script>document.documentElement.classList.add("js");</script>
 
 </head>
 
-  <header class="header">
-      <div class="logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_nome.svg" alt="Logo GoClasses"></a></div>
-      <nav class="navegacao_header">
-        <ul>
-          <li class="current-menu-item"><a href="/quemsomos">Quem Somos</a></li>
+<body>
+
+  <header class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_nome.svg" alt=""></a></div>
+      <ul class="links">
+          <li><a href="/quemsomos">Quem Somos</a></li>
           <li><a href="/projetos">Projetos</a></li>
-          <li class="parent">
-            <a href="/material">Materiais didáticos</a>
+          <li>
+            <a href="/material" class="desktop-link">Materiais Didáticos</a>
+            <input type="checkbox" id="show-materiais">
+            <label for="show-materiais">Materiais Didáticos</label>
             <ul>
               <li><a href="#">Linguagem de Programação Estruturada</a></li>
               <li><a href="#">Comunicação de Dados</a></li>
               <li><a href="#">Programação Paralela e Distribuída</a></li>
             </ul>
           </li>
-          <li><a href="/contato">Contato</a></li>
-          <li><a href="#">Entrar</a></li>
+          <li><a href="/contato">Contato</a></li>      
+          <li><a href="/login">Entrar</a></li>      
         </ul>
-      </nav>
-      <input type="checkbox" name="bc2" id="bc2">
-      <label for="bc2" class="search-icon">
-        <i class="fa fa-search fa-flip-horizontal"></i>
-        <i class="fa fa-close"></i>
-      </label>
-      <div class="search-box">
-        <form class="form-search">
-          <input type="search" placeholder="Pesquisar" class="search" required>
-          <input type="submit" value="IR" class="sub">
-        </form>
       </div>
-  </header>
-
-<body>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Digite algo para pesquisar..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+</header>
