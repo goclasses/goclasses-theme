@@ -429,3 +429,14 @@ nav .content .links{
 [data-slide-nav] > button.active {
   background: #fff;
 }
+
+/* Página Login */
+.login h1 a {
+background-image: url('./img/logo.svg');
+background-size: 250px 150px;
+width: 250px;
+height: 150px;
+}
+body.login {
+  background: #F1F5FD;
+}
