@@ -57,33 +57,27 @@
 <section class="materiais-inicio">
   <h2>MATERIAIS PARA AS DICIPLINAS DE...</h2>
   <div class="container materiais-3">
-    <div class="grid-4">
-      <div class="material-individual">  
-        <div class="imagem-material">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/structure.svg" alt="">
+  <?php
+    $homepageMaterias = new WP_Query(array(
+      'posts_per_page' => 3,
+      'post_type' => 'materia'
+    ));
+
+    while($homepageMaterias->have_posts()) {
+      $homepageMaterias->the_post(); ?>
+
+      <div class="grid-4">
+        <div class="material-individual">  
+          <div class="imagem-material">
+            <a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/data.svg" alt=""></a>
+          </div>
+          <h3><?php the_title(); ?></h3>
+          <a href="<?php the_permalink(); ?>" class="botao-red">Saiba mais</a>
         </div>
-        <h3>linguagem de programação estruturada</h3>
-        <a href="#" class="botao-red">Saiba mais</a>
       </div>
-    </div>
-    <div class="grid-4">
-      <div class="material-individual">  
-        <div class="imagem-material">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/data.svg" alt="">
-        </div>
-        <h3>comunicação de dados</h3>
-        <a href="#" class="botao-red">Saiba mais</a>
-      </div>
-    </div>
-    <div class="grid-4">
-      <div class="material-individual">  
-        <div class="imagem-material">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/network.svg" alt="">
-        </div>
-        <h3>programação paralela e distribuida</h3>
-        <a href="#" class="botao-red">Saiba mais</a>
-      </div>
-    </div>
+
+    <?php }
+  ?>
   </div>
 </section>
 <!-- Materiais termina -->

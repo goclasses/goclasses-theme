@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/author.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive-materia.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
   <!-- JS -->
@@ -39,13 +40,23 @@
           <li><a href="/quemsomos">Quem Somos</a></li>
           <li><a href="/projetos">Projetos</a></li>
           <li>
-            <a href="/material" class="desktop-link">Materiais Didáticos</a>
+            <a href="<?php echo get_post_type_archive_link('materia'); ?>" class="desktop-link">Materiais Didáticos</a>
             <input type="checkbox" id="show-materiais">
             <label for="show-materiais">Materiais Didáticos</label>
             <ul>
-              <li><a href="#">Linguagem de Programação Estruturada</a></li>
-              <li><a href="#">Comunicação de Dados</a></li>
-              <li><a href="#">Programação Paralela e Distribuída</a></li>
+              <?php
+                $headerMaterias = new WP_Query(array(
+                  'post_type' => 'materia'
+                ));
+
+                while($headerMaterias->have_posts()) {
+                  $headerMaterias->the_post(); ?>
+
+                  <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+
+                <?php }
+              ?>
+      
             </ul>
           </li>
           <li><a href="/contato">Contato</a></li>      

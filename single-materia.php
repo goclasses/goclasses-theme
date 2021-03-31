@@ -1,5 +1,4 @@
 <?php 
-  // Template Name: Página Quem Somos
   get_header(); 
 ?>
 
@@ -7,13 +6,12 @@
 
     <section class="cabecalho">
         <div>
-            <h1>MATERIAS DIDÁTICOS</h1>
+            <h1><?php the_title(); ?></h1>
         </div>
     </section>
 
     
     <section class="material">
-        <h1>Linguagem De Programação Estruturada</h2>
         <div class="container part1">
 
             <div class="grid-4 espacamento">

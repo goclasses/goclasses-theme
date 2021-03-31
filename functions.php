@@ -39,8 +39,8 @@ function goclasses_post_types() {
     // 'map_meta_cap' => true,
     // 'show_in_rest' => true,
     'supports' => array('title'),
-    // 'rewrite' => array('slug' => 'materias'),
-    // 'has_archive' => true,
+    'rewrite' => array('slug' => 'materias'),
+    'has_archive' => true,
     'public' => true,
     'labels' => array(
       'name' => 'Matérias',

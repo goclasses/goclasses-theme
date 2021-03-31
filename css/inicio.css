@@ -101,13 +101,13 @@
   padding-bottom: 30px;
 }
 
-div.materiais-3 div.grid-4:last-child > div {
-  float: right;
-}
-
-div.materiais-3 div.grid-4:nth-child(2) > div {
+div.materiais-3 div.grid-4:nth-child(3n - 1) > div {
   display: block  ;
   margin: 0 auto;
+}
+
+div.materiais-3 div.grid-4:nth-child(3n + 3) > div {
+  float: right;
 }
 
 /* Ultimos */
