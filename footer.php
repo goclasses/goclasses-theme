@@ -47,10 +47,10 @@
             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/github.svg" alt="github logo"></a>
           </div>
           <div class="instagram-redes">
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="instagram logo"></a>
+            <a href="https://www.instagram.com/utfpr_sh/"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="instagram logo"></a>
           </div>
           <div class="facebook-redes">
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook logo"></a>
+            <a href="https://www.facebook.com/UTFPR.SantaHelena"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook logo"></a>
           </div>
         </div>
       </div>
