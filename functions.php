@@ -30,3 +30,27 @@ function my_login_logo_url_title() {
 return 'GoClasses - Voltar para Home';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+// Registrando novos post-types
+
+function goclasses_post_types() {
+  register_post_type('materia', array(
+    // 'capability_type' => 'materia',
+    // 'map_meta_cap' => true,
+    // 'show_in_rest' => true,
+    'supports' => array('title'),
+    // 'rewrite' => array('slug' => 'materias'),
+    // 'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Matérias',
+      'add_new_item' => 'Adicionar Nova Matéria',
+      'edit_item' => 'Editar Matéria',
+      'all_items' => 'Todas Matérias',
+      'singular_name' => 'Matéria'
+    ), 
+    'menu_icon' => 'dashicons-edit-page'
+  ));
+}
+
+add_action('init', 'goclasses_post_types');
