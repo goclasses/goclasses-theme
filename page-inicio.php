@@ -69,7 +69,16 @@
       <div class="grid-4">
         <div class="material-individual">  
           <div class="imagem-material">
-            <a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/data.svg" alt=""></a>
+            <a href="<?php the_permalink(); ?>">
+              <img src="<?php 
+                $value = get_field('icone_materia');
+                if( $value ) {
+                  echo $value;
+                } else {
+                  echo get_template_directory_uri() . '/img/caderno.svg';
+                }
+              ?>" alt="Ícone da Matéria <?php the_title(); ?>">
+            </a>
           </div>
           <h3><?php the_title(); ?></h3>
           <a href="<?php the_permalink(); ?>" class="botao-red">Saiba mais</a>

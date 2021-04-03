@@ -33,6 +33,8 @@
 .imagem-material img {
   display: block;
   margin: 0 auto 30px auto;
+  height: 90px;
+  width: 90px;
 }
 
 .material-individual-archive h3 {
@@ -56,4 +58,27 @@ div.materiais-3-archive div.grid-4:nth-child(3n + 3) > div {
 
 div.materiais-3-archive div.grid-4:nth-child(n + 4) > div {
   margin-top: 30px;
+}
+
+/* Responsivo */
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+  .material-individual-archive {
+    width: 230px;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 739px) {
+
+  .material-individual-archive {
+    width: 300px;
+    float: left;
+  }
+
+  div.materiais-3-archive div.grid-4:nth-child(n+1) > div{
+    margin-top: 30px;
+  }
+
 }
