@@ -55,10 +55,14 @@
   margin: 10px 0;
 }
 
+.projeto-ind {
+  margin-bottom: 60px;
+  display: inline-block;
+}
+
+
 /* Repsonsivo */
 
 @media (max-width: 739px) {
-  .projeto-ind {
-    padding-bottom: 60px;
-  }
+  
 }
