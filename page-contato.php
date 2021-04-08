@@ -28,21 +28,19 @@
 
   <div class="grid-6 contato-info">
     <h3>Horário de Atendimento</h3>
-    <p>seg, qua e sex das 12h  às 17h</p>
-    <p>ter e qui das 17h  às 22h</p>
-    <p>sab das 13h  às 15h</p>
+    <?php the_field('horario_de_atendimento', $contato); ?>
 
     <h3 class="siga">Siga nossas redes</h3>
     <div class="links-redes-contato">
-      <div class="github-redes">
-        <a href="https://github.com/goclasses"><img src="<?php echo get_template_directory_uri(); ?>/img/github.svg" alt="github logo"></a>
-      </div>
-      <div class="instagram-redes">
-        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="instagram logo"></a>
-      </div>
-      <div class="facebook-redes">
-        <a href="https://www.instagram.com/utfpr_sh/"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook logo"></a>
-      </div>
+          <div class="github-redes">
+            <a href="<?php the_field('link_github', $contato); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/github.svg" alt="github logo"></a>
+          </div>
+          <div class="instagram-redes">
+            <a href="<?php the_field('link_instagram', $contato); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="instagram logo"></a>
+          </div>
+          <div class="facebook-redes">
+            <a href="<?php the_field('link_facebook', $contato); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook logo"></a>
+          </div>
     </div>
 
   </div>
