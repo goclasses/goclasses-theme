@@ -35,9 +35,6 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 function goclasses_post_types() {
   register_post_type('materia', array(
-    // 'capability_type' => 'materia',
-    // 'map_meta_cap' => true,
-    // 'show_in_rest' => true,
     'supports' => array('title'),
     'rewrite' => array('slug' => 'materias'),
     'has_archive' => true,
@@ -50,6 +47,21 @@ function goclasses_post_types() {
       'singular_name' => 'Matéria'
     ), 
     'menu_icon' => 'dashicons-edit-page'
+  ));
+
+  register_post_type('artigo', array(
+    'supports' => array('title', 'editor'),
+    'rewrite' => array('slug' => 'artigos'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Artigos',
+      'add_new_item' => 'Adicionar Novo Artigo',
+      'edit_item' => 'Editar Artigo',
+      'all_items' => 'Todos Artigos',
+      'singular_name' => 'Artigo'
+    ), 
+    'menu_icon' => 'dashicons-text-page'
   ));
 }
 

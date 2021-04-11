@@ -42,3 +42,13 @@
 .single-post-content {
   font-size: 1.125em;
 }
+
+/* single-artigo */
+
+.links_arquivos {
+  margin-top: 30px;
+}
+
+.links_arquivos #arquivo_artigo {
+  margin-right: 15px;
+}

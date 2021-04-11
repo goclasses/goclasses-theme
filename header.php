@@ -60,7 +60,8 @@
       
             </ul>
           </li>
-          <li><a href="/contato">Contato</a></li>      
+          <li><a href="/contato">Contato</a></li>    
+          <li><a href="/blog">Blog</a></li>    
           <li><a href="/login">Entrar</a></li>      
         </ul>
       </div>
