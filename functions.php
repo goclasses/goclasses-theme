@@ -63,6 +63,21 @@ function goclasses_post_types() {
     ), 
     'menu_icon' => 'dashicons-text-page'
   ));
+
+  register_post_type('plano_ensino', array(
+    'supports' => array('title'),
+    'rewrite' => array('slug' => 'planos_ensino'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Planos de Ensino',
+      'add_new_item' => 'Adicionar Novo Plano de Ensino',
+      'edit_item' => 'Editar Plano de Ensino',
+      'all_items' => 'Todos Planos de Ensino',
+      'singular_name' => 'Plano de Ensino'
+    ),
+    'menu_icon' => 'dashicons-analytics'
+  ));
 }
 
 add_action('init', 'goclasses_post_types');
