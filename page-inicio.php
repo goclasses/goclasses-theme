@@ -96,32 +96,25 @@
   <div class="ultimos-posts grid-6">
     <h2>últimos posts</h2>
 
-    <div class="ultimo-po-individual">
-      <h3>post 1</h3>
-      <p class="ultimo-post-ind-info">John Doe - 10/03/2021</p>
-      <p class="ultimo-post-ind-desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      </p>
-      <a href="#" class="botao-red-cinza">leia mais</a>
-    </div>
+    <?php
+    $homepagePosts = new WP_Query(array(
+      'posts_per_page' => 3,
+      'post_type' => 'post'
+    ));
 
-    <div class="ultimo-po-individual">
-      <h3>post 2</h3>
-      <p class="ultimo-post-ind-info">John Doe - 10/03/2021</p>
-      <p class="ultimo-post-ind-desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      </p>
-      <a href="#" class="botao-red-cinza">leia mais</a>
-    </div>
+    while($homepagePosts->have_posts()) {
+      $homepagePosts->the_post(); ?>
 
-    <div class="ultimo-po-individual">
-      <h3>post 3</h3>
-      <p class="ultimo-post-ind-info">John Doe - 10/03/2021</p>
-      <p class="ultimo-post-ind-desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      </p>
-      <a href="#" class="botao-red-cinza">leia mais</a>
-    </div>
+      <div class="ultimo-po-individual">
+        <h3><?php the_title(); ?></h3>
+        <p class="ultimo-post-ind-info"><?php the_author_meta( 'nicename'); ?> - <?php the_time('d/m/Y'); ?></p>
+        <p class="ultimo-post-ind-desc">
+          <?php echo wp_trim_words(get_the_content(), 12); ?>
+        </p>
+        <a href="<?php the_permalink(); ?>" class="botao-red-cinza">leia mais</a>
+      </div>
+
+    <?php } ?>
 
   </div>
 
