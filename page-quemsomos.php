@@ -24,23 +24,42 @@
 
     <section class="perfil_equipe">
         <div class="container">
-            <div class="grid-4 perfil-1">
-                <img class="teste" src="<?php echo get_template_directory_uri(); ?>/img/perfil-Giani.png" alt="">
-                <h2>Giani Carla Ito</h2>
-                <h3>PROFESSORA</h3>
-                <p>É professora do Curso de Ciência da Computação da UTFPR-SH e coordenadora do projeto Plataforma Web para Boas Práticas Globais na prevenção e combate à COVID-19</p>
+            <div class="grid-12">
+                <div class="ajuste_prof">
+                    <img class="teste" src="<?php echo get_template_directory_uri(); ?>/img/perfil-Giani.png" alt="">
+                    <h2>Giani Carla Ito</h2>
+                    <h3>PROFESSORA</h3>
+                    <p>É professora do Curso de Ciência da Computação da UTFPR-SH e coordenadora do projeto Plataforma Web para Boas Práticas Globais na prevenção e combate à COVID-19</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="grid-3 perfil-1">
+            <img class="teste"  src="<?php echo get_template_directory_uri(); ?>/img/perfil-rander.png" alt="">
+                <h2>Rander Carneiro</h2>
+                <h3>ALUNO</h3>
+                <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
             </div>
 
-            <div class="grid-4 perfil-2">
+            <div class="grid-3 perfil-2">
                 <img class="teste" src="<?php echo get_template_directory_uri(); ?>/img/perfil-erick.png" alt="">
                 <h2>Erick Oliveira dos Santos</h2>
                 <h3>ALUNO</h3>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
             </div>
 
-            <div class="grid-4 perfil-3">
-                <img class="teste"  src="<?php echo get_template_directory_uri(); ?>/img/perfil-rander.png" alt="">
-                <h2>Rander Carneiro</h2>
+            <div class="grid-3 perfil-3">
+                <img class="teste"  src="<?php echo get_template_directory_uri(); ?>/img/perfil-renato.png" alt="">
+                <h2>Renato Sardinha Lopes</h2>
+                <h3>ALUNO</h3>
+                <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
+            </div>
+
+            <div class="grid-3 perfil-4">
+                <img class="teste"  src="<?php echo get_template_directory_uri(); ?>/img/perfil-jose.png" alt="">
+                <h2>José Lohame Capinga</h2>
                 <h3>ALUNO</h3>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
             </div>
