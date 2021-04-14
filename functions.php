@@ -78,6 +78,21 @@ function goclasses_post_types() {
     ),
     'menu_icon' => 'dashicons-analytics'
   ));
+
+  register_post_type('video_aula', array(
+    'supports' => array('title', 'excerpt'),
+    'rewrite' => array('slug' => 'video_aula '),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Vídeo Aulas',
+      'add_new_item' => 'Adicionar Nova Vídeo Aula',
+      'edit_item' => 'Editar Vídeo Aula',
+      'all_items' => 'Todas Vídeo Aulas',
+      'singular_name' => 'Vídeo Aula'
+    ),
+    'menu_icon' => 'dashicons-video-alt3'
+  ));
 }
 
 add_action('init', 'goclasses_post_types');
