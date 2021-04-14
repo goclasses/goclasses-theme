@@ -93,6 +93,21 @@ function goclasses_post_types() {
     ),
     'menu_icon' => 'dashicons-video-alt3'
   ));
+
+  register_post_type('material', array(
+    'supports' => array('title', 'editor'),
+    'rewrite' => array('slug' => 'materiais_didaticos'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Materiais Didáticos',
+      'add_new_item' => 'Adicionar Novo Material',
+      'edit_item' => 'Editar Material',
+      'all_items' => 'Todos Materiais',
+      'singular_name' => 'Material'
+    ),
+    'menu_icon' => 'dashicons-book-alt'
+  ));
 }
 
 add_action('init', 'goclasses_post_types');
