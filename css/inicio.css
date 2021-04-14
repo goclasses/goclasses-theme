@@ -89,6 +89,8 @@
 .imagem-material img {
   display: block;
   margin: 0 auto 30px auto;
+  height: 90px;
+  width: 90px;
 }
 
 .material-individual h3 {
@@ -164,7 +166,7 @@ div.materiais-3 div.grid-4:nth-child(3n + 3) > div {
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 979px) {
   .material-individual {
-    width: 200px;
+    width: 230px;
   }
 }
 

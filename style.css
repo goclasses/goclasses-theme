@@ -62,7 +62,7 @@ a.botao-red-cinza, button.botao-red-cinza {
 .wrapper nav{
   position: relative;
   display: flex;
-  max-width: calc(100% - 200px);
+  max-width: calc(100% - 60px);
   margin: 0 auto;
   height: 70px;
   align-items: center;
@@ -89,10 +89,15 @@ nav .content .links{
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.wrapper > nav > ul > li:last-child > a{
-  padding: 5px 15px;
-  border: 1px solid #fff;
-  border-radius: 20px;
+.content > .links > li:last-child::before{
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 1px;
+  background: #fff;
+  position: relative;
+  top: 5px;
+  margin: 0 17px;
 }
 .content .links li label{
   display: none;
@@ -182,6 +187,7 @@ nav .content .links{
   width: 100%;
   line-height: 30px;
   border-radius: 0px!important;
+  font-size: 0.75em;
 }
 .content .links ul ul{
   position: absolute;
@@ -197,9 +203,12 @@ nav .content .links{
 
 /* Responsive code start */
 @media screen and (max-width: 1250px){
+  .content > .links > li:last-child::before{
+    margin: 0 13px;
+  }
   .wrapper nav{
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 30px;
   }
   nav .content .links{
     margin-left: 30px;
@@ -215,7 +224,10 @@ nav .content .links{
   }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 950px){
+  .content > .links > li:last-child::before{
+    display: none;
+  }
   .wrapper .menu-icon{
     display: block;
   }
@@ -225,7 +237,7 @@ nav .content .links{
   nav .content .links{
     display: block;
     position: fixed;
-    background: #14181f;
+    background: #323c4e;
     height: 100%;
     width: 100%;
     top: 70px;
