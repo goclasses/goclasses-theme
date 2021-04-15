@@ -27,7 +27,7 @@
 .perfil_equipe{
     padding-top: 60px;   
     background: #0D2759;
-    height: 480px;
+    height: 895px;
 }
 
 .teste{
@@ -38,6 +38,15 @@
 section.perfil_equipe > div.container > div.grid-4 > img{
     width: 200px;
     height: 200px;
+}
+
+.ajuste_prof p {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.ajuste_prof{
+    margin-bottom: 45px;
 }
 
 .perfil_equipe h2{
