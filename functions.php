@@ -142,3 +142,9 @@ add_filter( 'get_the_archive_title', function ($title) {
       }
   return $title;    
 });
+
+// Use GD instead of Imagick.
+function cb_child_use_gd_editor($array) {
+  return array( 'WP_Image_Editor_GD' );
+}
+add_filter( 'wp_image_editors', 'cb_child_use_gd_editor' );
