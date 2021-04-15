@@ -4,7 +4,7 @@
 
 <section class="cabecalho-index">
   <div>
-    <h1>Planos de Ensino </h1>
+    <h1>Avaliações</h1>
   </div>
 </section> 
 

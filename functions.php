@@ -81,7 +81,7 @@ function goclasses_post_types() {
 
   register_post_type('video_aula', array(
     'supports' => array('title', 'excerpt'),
-    'rewrite' => array('slug' => 'video_aula '),
+    'rewrite' => array('slug' => 'video_aula'),
     'has_archive' => true,
     'public' => true,
     'labels' => array(
@@ -108,6 +108,37 @@ function goclasses_post_types() {
     ),
     'menu_icon' => 'dashicons-book-alt'
   ));
+
+  register_post_type('avaliacao', array(
+    'supports' => array('title'),
+    'rewrite' => array('slug' => 'avaliacoes'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Avaliações',
+      'add_new_item' => 'Adicionar Nova Avaliação',
+      'edit_item' => 'Editar Avaliação',
+      'all_items' => 'Todas Avaliações',
+      'singular_name' => 'Avaliação'
+    ),
+    'menu_icon' => 'dashicons-list-view'
+  ));
 }
 
 add_action('init', 'goclasses_post_types');
+
+// Removendo prefixo dos títulos do archive
+add_filter( 'get_the_archive_title', function ($title) {    
+  if ( is_category() ) {    
+          $title = single_cat_title( '', false );    
+      } elseif ( is_tag() ) {    
+          $title = single_tag_title( '', false );    
+      } elseif ( is_author() ) {    
+          $title = '<span class="vcard">' . get_the_author() . '</span>' ;    
+      } elseif ( is_tax() ) { //for custom post types
+          $title = sprintf( __( '%1$s' ), single_term_title( '', false ) );
+      } elseif (is_post_type_archive()) {
+          $title = post_type_archive_title( '', false );
+      }
+  return $title;    
+});

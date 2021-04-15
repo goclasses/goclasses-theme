@@ -12,57 +12,50 @@
   padding-top:75px ;
 }
 
+.post-page::after, .post-page::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
 .post-page {
-  padding: 60px 0;
+  display: block;
+  margin: 60px 0;
 }
 
-.post-page h2 {
-  font-size: 2em;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  font-family: 'Varela Round';
-}
-
-.imagem-projeto img {
+.imagem-index img{
   width: 370px;
   height: 200px;
   object-fit: cover ;
 }
 
-.projeto-info h3 {
+.info-index {
+  border-left: 2px solid #000;
+  padding: 0 15px;
+  height: 200px;
+}
+
+.info-index h2 {
   font-size: 1.5em;
+  font-family: 'Varela Round';
 }
 
-.projeto-info {
-  margin-top: 10px;
-  max-width: 250px;
-  padding-left: 10px;
-  border-left: 1px solid #121314;
-}
-
-.projeto-info a {
-  margin: 10px 0;
-}
-
-.info-projeto-ind {
+.info-index-ind {
   margin: 5px 0;
   color: #28292C;
   font-style: italic;
   font-size: 0.875em;
 }
 
-.sobre-projeto-ind {
-  margin: 10px 0;
+.sobre-index-ind {
+  margin: 10px 0 20px 0;
+  max-width: 770px;
 }
-
-.projeto-ind {
-  margin-bottom: 60px;
-  display: inline-block;
-}
-
 
 /* Repsonsivo */
 
 @media (max-width: 739px) {
-  
+  .info-index {
+    height: auto;
+  }
 }
