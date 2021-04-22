@@ -16,8 +16,14 @@
 
 <!-- post  -->
 <div class="container">
-	<?php while ( have_posts() ) {
-		the_post(); 
+	<?php
+    $archiveConteudo = new WP_Query(array(
+			'post_type' => is_archive() ? get_queried_object()->name : false,
+      'category_name' => htmlspecialchars($_GET["mat"]),
+    ));
+
+    while($archiveConteudo->have_posts()) {
+      $archiveConteudo->the_post(); 
 	?>
 		<div class="post-page">
 			<div class="grid-4">

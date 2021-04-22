@@ -77,6 +77,7 @@ function goclasses_post_types() {
       'all_items' => 'Todos Planos de Ensino',
       'singular_name' => 'Plano de Ensino'
     ),
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-analytics'
   ));
 
@@ -92,6 +93,7 @@ function goclasses_post_types() {
       'all_items' => 'Todas Vídeo Aulas',
       'singular_name' => 'Vídeo Aula'
     ),
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-video-alt3'
   ));
 
@@ -123,6 +125,7 @@ function goclasses_post_types() {
       'all_items' => 'Todas Avaliações',
       'singular_name' => 'Avaliação'
     ),
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-list-view'
   ));
 }
