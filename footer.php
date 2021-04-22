@@ -19,21 +19,7 @@
       <div class="links-uteis grid-5">
         <h2>links úteis</h2>
         <div class="links-foooter">
-          <ul>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-            <li><a href="#">https://ipsum.com</a></li>
-          </ul>
+                <?php the_field('link_util', $contato); ?>
         </div>
       </div>
 
