@@ -21,16 +21,6 @@
   height: 420px;
 }
 
-.noticia-1, .noticia-3 {
-  background: url("../img/slider-1.jpg") no-repeat center;
-  background-size: cover;
-}
-
-.noticia-2 {
-  background: url("../img/imagem-pc.jpg") no-repeat center;
-  background-size: cover;
-}
-
 /* Sobre */
 
 .sobre-inicio {

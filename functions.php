@@ -61,6 +61,7 @@ function goclasses_post_types() {
       'all_items' => 'Todos Artigos',
       'singular_name' => 'Artigo'
     ), 
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-text-page'
   ));
 
@@ -106,6 +107,7 @@ function goclasses_post_types() {
       'all_items' => 'Todos Materiais',
       'singular_name' => 'Material'
     ),
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-book-alt'
   ));
 
