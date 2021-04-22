@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/index.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive-materia.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
@@ -60,7 +60,8 @@
       
             </ul>
           </li>
-          <li><a href="/contato">Contato</a></li>      
+          <li><a href="/contato">Contato</a></li>    
+          <li><a href="/blog">Blog</a></li>    
           <li><a href="/login">Entrar</a></li>      
         </ul>
       </div>

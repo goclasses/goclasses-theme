@@ -21,23 +21,20 @@
 	?>
 		<div class="post-page">
 			<div class="grid-4">
-				<div class="imagem-index">
-					<a href="<?php the_permalink(); ?>"><img src="<?php 
-						$value = get_field('imagem');
-						if( $value ) {
-							echo $value;
-						} else {
-							echo get_template_directory_uri() . '/img/imagem-pc.jpg';
-						}
+				<div class="imagem-video_aula">
+					<a href="<?php the_field('url_video_aula'); ?>" target="_blank"><img src="<?php 
+						$url = get_field('url_video_aula');
+						preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $url, $match);
+						$youtube_id = $match[1];
+						echo 'https://img.youtube.com/vi/' . $youtube_id . '/mqdefault.jpg'
 					?>" alt="Post <?php the_title(); ?>"></a>
 				</div>
 			</div>
 			<div class="grid-8">
 				<div class="info-index">
 					<h2><?php the_title(); ?></h2>
-					<p class="info-index-ind"><?php the_author_meta( 'nicename'); ?> - <?php the_time('d/m/Y'); ?></p>
-					<p class="sobre-index-ind"><?php echo wp_trim_words(get_the_content(), 30); ?></p>
-					<a href="<?php the_permalink(); ?>" class="botao-red-cinza">abrir</a>
+					<p class="sobre-index-ind"><?php echo get_the_excerpt(); ?></p>
+					<a href="<?php the_field('url_video_aula'); ?>" target="_blank" class="botao-red-cinza">abrir</a>
 				</div>
 			</div>
 		</div>

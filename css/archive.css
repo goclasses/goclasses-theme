@@ -1,4 +1,4 @@
-/* Materiais */
+/* Materias */
 
 .archive-materia {
   background: #fff;
@@ -81,4 +81,39 @@ div.materiais-3-archive div.grid-4:nth-child(n + 4) > div {
     margin-top: 30px;
   }
 
+}
+
+/* Materiais */
+
+.archive_plano_ensino {
+  padding: 60px 0 90px 0;
+}
+
+.botao_archive_plano {
+  color: #121314;
+  font-size: 1em;
+  padding: 15px 20px;
+  border: 1px solid #121314;
+  text-transform: uppercase;
+  border-radius: 50px;
+  outline: none;
+}
+
+.single_plano {
+  margin-bottom: 60px;
+}
+
+/* Archive Video Aula */
+
+.imagem-video_aula img{
+  width: 370px;
+  height: 200px;
+  object-fit: cover ;
+}
+
+@media (max-width: 739px) {
+  .imagem-video_aula img {
+    width: 300px;
+    height: 168.75px;
+  }
 }
