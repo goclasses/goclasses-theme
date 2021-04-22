@@ -21,9 +21,10 @@
 			'post_type' => is_archive() ? get_queried_object()->name : false,
       'category_name' => htmlspecialchars($_GET["mat"]),
     ));
-
-    while($archiveConteudo->have_posts()) {
-      $archiveConteudo->the_post(); 
+		if($archiveConteudo->have_posts()){
+	
+  	  while($archiveConteudo->have_posts()) {
+    	  $archiveConteudo->the_post(); 
 	?>
 		<div class="post-page">
 			<div class="grid-4">
@@ -43,6 +44,10 @@
 					<a href="<?php the_field('url_video_aula'); ?>" target="_blank" class="botao-red-cinza">abrir</a>
 				</div>
 			</div>
+		</div>
+	<?php }} else { ?>
+		<div class="imagem-sem-conteudo">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/no-data-amico.svg" alt="">
 		</div>
 	<?php } ?>
 </div>

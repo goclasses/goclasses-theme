@@ -52,6 +52,11 @@
   max-width: 770px;
 }
 
+.imagem-sem-conteudo {
+  margin: 0 auto;
+  max-width: 300px  ;
+}
+
 /* Repsonsivo */
 
 @media (max-width: 739px) {
