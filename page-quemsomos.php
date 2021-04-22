@@ -7,13 +7,13 @@
 
     <section class="cabecalho">
         <div>
-            <h1>QUEM SOMOS?</h1>
+        <?php the_field('sobre_nos', $QuemSomos); ?>
         </div>
     </section>
 
     <section class="container missao_sobre">
         <div class="grid-7 informativo">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam erat volutpat. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Duis condimentum augue id magna.</p>
+            <p><?php the_field('sobre_nos', $QuemSomos); ?></p>
         </div>
         <div class="grid-3">
             <div class="icone_equipe">
@@ -73,7 +73,7 @@
             </div>
             <div class="grid-7 info-utf">
                 <h3>UM POUCO SOBRE A NOSSA UTFPR</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <p><?php the_field('sobre_utfpr', $QuemSomos); ?></p>
             </div>
         </div>
     </section>
