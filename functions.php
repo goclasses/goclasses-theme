@@ -153,3 +153,25 @@ function cb_child_use_gd_editor($array) {
   return array( 'WP_Image_Editor_GD' );
 }
 add_filter( 'wp_image_editors', 'cb_child_use_gd_editor' );
+
+// Adiconando os arquivos CSS
+function goclasses_css(){
+  // Folhas de estilo principais
+	wp_enqueue_style('goclasses-normalize', get_template_directory_uri() . '/css/normalize.css');
+	wp_enqueue_style('goclasses-reset', get_template_directory_uri() . '/css/reset.css');
+	wp_enqueue_style('goclasses-grid', get_template_directory_uri() . '/css/grid.css');
+  wp_enqueue_style('goclasses-style', get_template_directory_uri() . '/style.css');
+  wp_enqueue_style('goclasses-inicio', get_template_directory_uri() . '/css/inicio.css');
+  wp_enqueue_style('goclasses-quemsomos', get_template_directory_uri() . '/css/quemsomos.css');
+  wp_enqueue_style('goclasses-projetos', get_template_directory_uri() . '/css/projetos.css');
+  wp_enqueue_style('goclasses-material', get_template_directory_uri() . '/css/material.css');
+  wp_enqueue_style('goclasses-contato', get_template_directory_uri() . '/css/contato.css');
+  wp_enqueue_style('goclasses-contato', get_template_directory_uri() . '/css/contato.css');
+  wp_enqueue_style('goclasses-index', get_template_directory_uri() . '/css/index.css');
+  wp_enqueue_style('goclasses-archive', get_template_directory_uri() . '/css/archive.css');
+  wp_enqueue_style('goclasses-single', get_template_directory_uri() . '/css/single.css');
+  wp_enqueue_style('goclasses-author', get_template_directory_uri() . '/css/author.css');
+  // Folha de estilo Font Awesome para ícones
+  wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+}
+add_action('wp_enqueue_scripts', 'goclasses_css');

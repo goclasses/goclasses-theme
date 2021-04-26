@@ -7,22 +7,6 @@
   <title><?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/grid.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/inicio.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/quemsomos.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/projetos.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contato.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/index.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/archive.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
   <!-- JS -->
   <script>document.documentElement.classList.add("js");</script>
 
@@ -71,4 +55,4 @@
         <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
       </form>
     </nav>
-</header>
+  </header>
