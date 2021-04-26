@@ -191,3 +191,27 @@ function goclasses_css(){
   wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 }
 add_action('wp_enqueue_scripts', 'goclasses_css');
+
+// Desabilitar a barra de usuário para todos os usuários, inclusive usuários admin.
+show_admin_bar(false);
+
+/**
+* Redirecionar usuário para o site após login bem sucedido.
+* Desenvolvido por Sergio Ronei - https://altosite.com.br
+**/
+function my_login_redirect( $redirect_to, $request, $user ) {
+  //o trecho abaixo verifica se existe algum usuário a ser checado
+  global $user;
+  if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+    //checa se o usuário é admin. Se positivo, leva o admin para o painel de administração.
+    if ( in_array( 'administrator', $user->roles ) ) {
+      //se for qualquer outro tipo de usuário, leva para a home do site.
+      return home_url();
+    } else {
+      return home_url();
+    }
+  } else {
+    return home_url();
+  }
+}
+add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );

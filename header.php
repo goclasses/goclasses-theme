@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
   <header class="wrapper">
     <nav>
       <input type="checkbox" id="show-search">
@@ -46,7 +45,20 @@
           </li>
           <li><a href="/contato">Contato</a></li>    
           <li><a href="/blog">Blog</a></li>    
-          <li><a href="/login">Entrar</a></li>      
+          <?php if(is_user_logged_in()) { ?>
+            <li>
+              <a class="desktop-link" href="http://goclasses.local/author/erick">Erick</a>
+              <input type="checkbox" id="show-user">
+              <label for="show-user">Erick</label>
+              <ul class="login-ul">
+                <li><a href="<?php echo admin_url(); ?>">DashBoard</a></li>
+                <li><a href="<?php echo wp_logout_url(); ?>">Sair</a></li>
+              </ul>
+            </li>
+          <?php } else{ ?>
+            <li><a href="/login">Entrar</a></li>
+          <?php } ?>
+          
         </ul>
       </div>
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
