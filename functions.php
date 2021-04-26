@@ -128,6 +128,22 @@ function goclasses_post_types() {
     'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-list-view'
   ));
+
+  register_post_type('projeto', array(
+    'supports' => array('title', 'editor'),
+    'rewrite' => array('slug' => 'projetos'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Projetos',
+      'add_new_item' => 'Adicionar Novo Projeto',
+      'edit_item' => 'Editar Projeto',
+      'all_items' => 'Todos Projetos',
+      'singular_name' => 'Projeto'
+    ),
+    'taxonomies' => array('category'),
+    'menu_icon' => 'dashicons-portfolio'
+  ));
 }
 
 add_action('init', 'goclasses_post_types');
