@@ -176,6 +176,9 @@ nav .content .links{
   opacity: 0;
   visibility: hidden;
 }
+.content .links ul.login-ul {
+  margin-left: 34px;
+}
 .content .links li:hover > ul{
   top: 70px;
   opacity: 1;
@@ -278,6 +281,7 @@ nav .content .links{
     overflow: hidden;
   }
   .content .links #show-materiais:checked ~ ul,
+  .content .links #show-user:checked ~ ul,
   .content .links #show-services:checked ~ ul,
   .content .links #show-items:checked ~ ul{
     max-height: 100vh;

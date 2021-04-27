@@ -15,7 +15,7 @@
         <div class="container part1">
 
             <div class="grid-4 espacamento">
-                <a href="<?php echo get_post_type_archive_link( 'artigo' ); ?>">
+                <a href="<?php echo get_post_type_archive_link( 'artigo' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">
                 <div class="imagem-fundo">
                     <h6>ARTIGOS E PUBLICAÇÕES</h6>
                     <div class="imagem-material">
@@ -27,7 +27,7 @@
             </div>
 
             <div class="grid-4 espacamento">
-                <a href="<?php echo get_post_type_archive_link( 'post' ); ?>">
+                <a href="<?php echo get_post_type_archive_link( 'post' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">
                 <div class="imagem-fundo">
                     <h6>ASSUNTOS REVELANTES</h6>
                     <div class="imagem-material">
@@ -39,7 +39,7 @@
             </div>
 
             <div class="grid-4 espacamento">
-                <a href="<?php echo get_post_type_archive_link( 'material' ); ?>">
+                <a href="<?php echo get_post_type_archive_link( 'material' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">
                 <div class="imagem-fundo">
                     <h6>MATERIAIS DIDATICOS</h6>
                     <div class="imagem-material">
@@ -57,7 +57,7 @@
     <section class="material">
         <div class="container part2">
             <div class="grid-4 espacamento">
-                <a href="<?php echo get_post_type_archive_link( 'video_aula' ); ?>">
+                <a href="<?php echo get_post_type_archive_link( 'video_aula' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">
                 <div class="imagem-fundo">
                     <h6>VÍDEOAULA GRAVADAS</h6>
                     <div class="imagem-material">
@@ -69,7 +69,7 @@
             </div>
  
             <div class="grid-4 espacamento">
-                <a href="<?php echo get_post_type_archive_link( 'plano_ensino' ); ?>">
+                <a href="<?php echo get_post_type_archive_link( 'plano_ensino' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">
                 <div class="imagem-fundo">
                     <h6>PLANO DE ENSINO</h6>
                     <div class="imagem-material">
@@ -81,7 +81,7 @@
             </div>
 
             <div class="grid-4 espacamento">
-                <a href="<?php echo get_post_type_archive_link( 'avaliacao' ); ?>">
+                <a href="<?php echo get_post_type_archive_link( 'avaliacao' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">
                 <div class="imagem-fundo">
                     <h6>AVALIAÇÕES E SIMULADOS</h6>
                     <div class="imagem-material">

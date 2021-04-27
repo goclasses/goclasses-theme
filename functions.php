@@ -35,6 +35,8 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 function goclasses_post_types() {
   register_post_type('materia', array(
+    'capability_type' => 'materia',
+    'map_meta_cap' => true,
     'supports' => array('title'),
     'rewrite' => array('slug' => 'materias'),
     'has_archive' => true,
@@ -50,6 +52,8 @@ function goclasses_post_types() {
   ));
 
   register_post_type('artigo', array(
+    'capability_type' => 'artigo',
+    'map_meta_cap' => true,
     'supports' => array('title', 'editor'),
     'rewrite' => array('slug' => 'artigos'),
     'has_archive' => true,
@@ -61,10 +65,13 @@ function goclasses_post_types() {
       'all_items' => 'Todos Artigos',
       'singular_name' => 'Artigo'
     ), 
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-text-page'
   ));
 
   register_post_type('plano_ensino', array(
+    'capability_type' => 'plano_ensino',
+    'map_meta_cap' => true,
     'supports' => array('title'),
     'rewrite' => array('slug' => 'planos_ensino'),
     'has_archive' => true,
@@ -76,10 +83,13 @@ function goclasses_post_types() {
       'all_items' => 'Todos Planos de Ensino',
       'singular_name' => 'Plano de Ensino'
     ),
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-analytics'
   ));
 
   register_post_type('video_aula', array(
+    'capability_type' => 'video_aula',
+    'map_meta_cap' => true,
     'supports' => array('title', 'excerpt'),
     'rewrite' => array('slug' => 'video_aula'),
     'has_archive' => true,
@@ -91,10 +101,13 @@ function goclasses_post_types() {
       'all_items' => 'Todas Vídeo Aulas',
       'singular_name' => 'Vídeo Aula'
     ),
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-video-alt3'
   ));
 
   register_post_type('material', array(
+    'capability_type' => 'material',
+    'map_meta_cap' => true,
     'supports' => array('title', 'editor'),
     'rewrite' => array('slug' => 'materiais_didaticos'),
     'has_archive' => true,
@@ -106,10 +119,13 @@ function goclasses_post_types() {
       'all_items' => 'Todos Materiais',
       'singular_name' => 'Material'
     ),
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-book-alt'
   ));
 
   register_post_type('avaliacao', array(
+    'capability_type' => 'avaliacao',
+    'map_meta_cap' => true,
     'supports' => array('title'),
     'rewrite' => array('slug' => 'avaliacoes'),
     'has_archive' => true,
@@ -121,7 +137,26 @@ function goclasses_post_types() {
       'all_items' => 'Todas Avaliações',
       'singular_name' => 'Avaliação'
     ),
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-list-view'
+  ));
+
+  register_post_type('projeto', array(
+    'capability_type' => 'projeto',
+    'map_meta_cap' => true,
+    'supports' => array('title', 'editor'),
+    'rewrite' => array('slug' => 'projetos'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Projetos',
+      'add_new_item' => 'Adicionar Novo Projeto',
+      'edit_item' => 'Editar Projeto',
+      'all_items' => 'Todos Projetos',
+      'singular_name' => 'Projeto'
+    ),
+    'taxonomies' => array('category'),
+    'menu_icon' => 'dashicons-portfolio'
   ));
 }
 
@@ -148,3 +183,65 @@ function cb_child_use_gd_editor($array) {
   return array( 'WP_Image_Editor_GD' );
 }
 add_filter( 'wp_image_editors', 'cb_child_use_gd_editor' );
+
+// Adiconando os arquivos CSS
+function goclasses_css(){
+  // Folhas de estilo principais
+	wp_enqueue_style('goclasses-normalize', get_template_directory_uri() . '/css/normalize.css');
+	wp_enqueue_style('goclasses-reset', get_template_directory_uri() . '/css/reset.css');
+	wp_enqueue_style('goclasses-grid', get_template_directory_uri() . '/css/grid.css');
+  wp_enqueue_style('goclasses-style', get_template_directory_uri() . '/style.css');
+  wp_enqueue_style('goclasses-inicio', get_template_directory_uri() . '/css/inicio.css');
+  wp_enqueue_style('goclasses-quemsomos', get_template_directory_uri() . '/css/quemsomos.css');
+  wp_enqueue_style('goclasses-projetos', get_template_directory_uri() . '/css/projetos.css');
+  wp_enqueue_style('goclasses-material', get_template_directory_uri() . '/css/material.css');
+  wp_enqueue_style('goclasses-contato', get_template_directory_uri() . '/css/contato.css');
+  wp_enqueue_style('goclasses-contato', get_template_directory_uri() . '/css/contato.css');
+  wp_enqueue_style('goclasses-index', get_template_directory_uri() . '/css/index.css');
+  wp_enqueue_style('goclasses-archive', get_template_directory_uri() . '/css/archive.css');
+  wp_enqueue_style('goclasses-single', get_template_directory_uri() . '/css/single.css');
+  wp_enqueue_style('goclasses-author', get_template_directory_uri() . '/css/author.css');
+  // Folha de estilo Font Awesome para ícones
+  wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+}
+add_action('wp_enqueue_scripts', 'goclasses_css');
+
+// Desabilitar a barra de usuário para todos os usuários, inclusive usuários admin.
+show_admin_bar(false);
+
+/**
+* Redirecionar usuário para o site após login bem sucedido.
+* Desenvolvido por Sergio Ronei - https://altosite.com.br
+**/
+function my_login_redirect( $redirect_to, $request, $user ) {
+  //o trecho abaixo verifica se existe algum usuário a ser checado
+  global $user;
+  if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+    //checa se o usuário é admin. Se positivo, leva o admin para o painel de administração.
+    if ( in_array( 'administrator', $user->roles ) ) {
+      //se for qualquer outro tipo de usuário, leva para a home do site.
+      return home_url();
+    } else {
+      return home_url();
+    }
+  } else {
+    return home_url();
+  }
+}
+add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
+
+//Removendo itens do WP
+function remove_wp_items( $wp_admin_bar ) {
+    $wp_admin_bar->remove_node( 'wp-logo' );
+    $wp_admin_bar->remove_node( 'comments' );
+}
+add_action( 'admin_bar_menu', 'remove_wp_items', 999 );
+
+function remove_menu_items(){
+  $user = wp_get_current_user();
+  $allowed_roles = array('administrator', 'editor');
+  if( !array_intersect($allowed_roles, $user->roles ) ) {
+    remove_menu_page( 'index.php' );
+  }
+}
+add_action( 'admin_menu', 'remove_menu_items', 999 );

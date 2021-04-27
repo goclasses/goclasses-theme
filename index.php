@@ -16,9 +16,17 @@
 
 <!-- post  -->
 <div class="container">
-	<?php while ( have_posts() ) {
-		the_post(); 
+	<?php
+    $archiveConteudo = new WP_Query(array(
+			'post_type' => is_archive() ? get_queried_object()->name : false,
+      'category_name' => htmlspecialchars($_GET["mat"]),
+    ));
+		if($archiveConteudo->have_posts()){
+	
+  	  while($archiveConteudo->have_posts()) {
+    	  $archiveConteudo->the_post(); 
 	?>
+
 		<div class="post-page">
 			<div class="grid-4">
 				<div class="imagem-index">
@@ -40,6 +48,10 @@
 					<a href="<?php the_permalink(); ?>" class="botao-red-cinza">abrir</a>
 				</div>
 			</div>
+		</div>
+	<?php }} else { ?>
+		<div class="imagem-sem-conteudo">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/no-data-amico.svg" alt="">
 		</div>
 	<?php } ?>
 </div>

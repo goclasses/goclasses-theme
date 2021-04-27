@@ -8,34 +8,57 @@
 <!-- Começa código da página -->
 
 <!-- Carrossel Começa -->
+
+<?php
+  $homepageCarrossel = new WP_Query(array(
+    'posts_per_page' => 3,
+    'category_name' => 'destaque',
+    'post_type' => array('post', 'artigo')
+  ));
+  $contador_style = 1;
+  while($homepageCarrossel->have_posts()) {
+    $homepageCarrossel->the_post(); 
+?>
+
+<style type="text/css">
+  .noticia-<?php echo $contador_style; ?> {
+    background: url("<?php 
+      $value = get_field('imagem');
+      if( $value ) {
+        echo $value;
+      } else {
+        echo get_template_directory_uri() . '/img/imagem-pc.jpg';
+      }  
+    ?>") no-repeat center;
+    background-size: cover;
+  }
+</style>
+
+<?php 
+    $contador_style++;
+  }
+?>
 <section class="carrossel" data-slide="carrossel">
-  <div class="noticia-1">
-    <div class="grid-12">
-      <div class="container">
-          <h2>GoClasses source code</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          <a href="#" class="botao-red">saiba mais</a>
+  <?php
+    $contador_carrossel = 1;
+    while($homepageCarrossel->have_posts()) {
+      $homepageCarrossel->the_post(); 
+  ?>
+
+    <div class="noticia-<?php echo $contador_carrossel; ?>">
+      <div class="grid-12">
+        <div class="container">
+            <h2><?php echo mb_strimwidth(get_the_title(), 0, 45, '...'); ?></h2>
+            <p><?php echo mb_strimwidth(get_the_content(), 0, 140, '...'); ?></p>
+            <a href="<?php the_permalink(); ?>" class="botao-red">saiba mais</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="noticia-2">
-    <div class="grid-12">
-      <div class="container">
-          <h2>GoClasses source code</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          <a href="#" class="botao-red">saiba mais</a>
-      </div>
-    </div>
-  </div>
-  <div class="noticia-3">
-    <div class="grid-12">
-      <div class="container">
-          <h2>GoClasses source code</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          <a href="#" class="botao-red">saiba mais</a>
-      </div>
-    </div>
-  </div>
+
+  <?php 
+      $contador_carrossel++;
+    } 
+  ?>
 </section>
 <!-- Carrossel termina -->
 
