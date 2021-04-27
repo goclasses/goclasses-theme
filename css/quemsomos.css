@@ -27,7 +27,7 @@
 .perfil_equipe{
     padding-top: 60px;   
     background: #0D2759;
-    height: 895px;
+    height: 920px;
 }
 
 .teste{
@@ -110,6 +110,12 @@ section.campus > div.container > div.info-utf > h3::after{
     text-align: right;
     font-size: 20px;
     padding-top: 30px;
+
+}
+
+.perfil_devs{
+    display: flex;
+    justify-content: center;
 
 }
 
