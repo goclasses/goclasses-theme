@@ -30,7 +30,7 @@
 <!-- Código para Query de projetos -->
 <?php
   $projetosAutor = new WP_Query(array(
-    'post_type' => 'post',
+    'post_type' => 'projeto',
     'author' => $curauth->ID
   ));
 

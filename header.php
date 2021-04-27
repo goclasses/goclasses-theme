@@ -47,11 +47,21 @@
           <li><a href="/blog">Blog</a></li>    
           <?php if(is_user_logged_in()) { ?>
             <li>
-              <a class="desktop-link" href="http://goclasses.local/author/erick">Erick</a>
+              <a class="desktop-link" href="http://goclasses.local/author/<?php
+                $user = wp_get_current_user();
+                echo $user->user_login;
+              ?>"><?php echo $user->display_name; ?></a>
               <input type="checkbox" id="show-user">
               <label for="show-user">Erick</label>
               <ul class="login-ul">
-                <li><a href="<?php echo admin_url(); ?>">DashBoard</a></li>
+                <li><a href="<?php 
+                  $allowed_roles = array('administrator');
+                  if( !array_intersect($allowed_roles, $user->roles ) ) {
+                    echo admin_url() . 'edit.php?post_type=projeto';
+                  } else {
+                    echo admin_url();
+                  }
+                ?>">DashBoard</a></li>
                 <li><a href="<?php echo wp_logout_url(); ?>">Sair</a></li>
               </ul>
             </li>
@@ -68,3 +78,5 @@
       </form>
     </nav>
   </header>
+
+  <?php //var_dump($user); ?>

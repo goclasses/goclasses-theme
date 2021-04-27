@@ -35,6 +35,8 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 function goclasses_post_types() {
   register_post_type('materia', array(
+    'capability_type' => 'materia',
+    'map_meta_cap' => true,
     'supports' => array('title'),
     'rewrite' => array('slug' => 'materias'),
     'has_archive' => true,
@@ -50,6 +52,8 @@ function goclasses_post_types() {
   ));
 
   register_post_type('artigo', array(
+    'capability_type' => 'artigo',
+    'map_meta_cap' => true,
     'supports' => array('title', 'editor'),
     'rewrite' => array('slug' => 'artigos'),
     'has_archive' => true,
@@ -66,6 +70,8 @@ function goclasses_post_types() {
   ));
 
   register_post_type('plano_ensino', array(
+    'capability_type' => 'plano_ensino',
+    'map_meta_cap' => true,
     'supports' => array('title'),
     'rewrite' => array('slug' => 'planos_ensino'),
     'has_archive' => true,
@@ -82,6 +88,8 @@ function goclasses_post_types() {
   ));
 
   register_post_type('video_aula', array(
+    'capability_type' => 'video_aula',
+    'map_meta_cap' => true,
     'supports' => array('title', 'excerpt'),
     'rewrite' => array('slug' => 'video_aula'),
     'has_archive' => true,
@@ -98,6 +106,8 @@ function goclasses_post_types() {
   ));
 
   register_post_type('material', array(
+    'capability_type' => 'material',
+    'map_meta_cap' => true,
     'supports' => array('title', 'editor'),
     'rewrite' => array('slug' => 'materiais_didaticos'),
     'has_archive' => true,
@@ -114,6 +124,8 @@ function goclasses_post_types() {
   ));
 
   register_post_type('avaliacao', array(
+    'capability_type' => 'avaliacao',
+    'map_meta_cap' => true,
     'supports' => array('title'),
     'rewrite' => array('slug' => 'avaliacoes'),
     'has_archive' => true,
@@ -130,6 +142,8 @@ function goclasses_post_types() {
   ));
 
   register_post_type('projeto', array(
+    'capability_type' => 'projeto',
+    'map_meta_cap' => true,
     'supports' => array('title', 'editor'),
     'rewrite' => array('slug' => 'projetos'),
     'has_archive' => true,
@@ -215,3 +229,19 @@ function my_login_redirect( $redirect_to, $request, $user ) {
   }
 }
 add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
+
+//Removendo itens do WP
+function remove_wp_items( $wp_admin_bar ) {
+    $wp_admin_bar->remove_node( 'wp-logo' );
+    $wp_admin_bar->remove_node( 'comments' );
+}
+add_action( 'admin_bar_menu', 'remove_wp_items', 999 );
+
+function remove_menu_items(){
+  $user = wp_get_current_user();
+  $allowed_roles = array('administrator', 'editor');
+  if( !array_intersect($allowed_roles, $user->roles ) ) {
+    remove_menu_page( 'index.php' );
+  }
+}
+add_action( 'admin_menu', 'remove_menu_items', 999 );
