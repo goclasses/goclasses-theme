@@ -7,7 +7,7 @@
 
     <section class="cabecalho">
         <div>
-        <?php the_field('sobre_nos', $QuemSomos); ?>
+            <h1>QUEM SOMOS?</h1>
         </div>
     </section>
 
@@ -29,6 +29,10 @@
                     <img class="teste" src="<?php echo get_template_directory_uri(); ?>/img/perfil-Giani.png" alt="">
                     <h2>Giani Carla Ito</h2>
                     <h3>PROFESSORA</h3>
+                        <div class="perfil_devs">
+                            <a href="<?php the_field('linkedin_perfil0', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/Likedin.png" alt=""></a>
+                            <a href="<?php the_field('lattes_Perfil0', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattess.png"  alt=""></a>
+                        </div>
                     <p>É professora do Curso de Ciência da Computação da UTFPR-SH e coordenadora do projeto Plataforma Web para Boas Práticas Globais na prevenção e combate à COVID-19</p>
                 </div>
             </div>
@@ -40,6 +44,13 @@
             <img class="teste"  src="<?php echo get_template_directory_uri(); ?>/img/perfil-rander.png" alt="">
                 <h2>Rander Carneiro</h2>
                 <h3>ALUNO</h3>
+                <div class="perfil_devs">
+
+                    <a href="<?php the_field('linkedin_perfil1', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/Likedin.png" alt=""></a>
+
+                    <a href="<?php the_field('lattes_perfil1', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattess.png"  alt=""></a>
+
+                </div>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
             </div>
 
@@ -47,6 +58,13 @@
                 <img class="teste" src="<?php echo get_template_directory_uri(); ?>/img/perfil-erick.png" alt="">
                 <h2>Erick Oliveira dos Santos</h2>
                 <h3>ALUNO</h3>
+                <div class="perfil_devs">
+
+                    <a href="<?php the_field('linkedin_perfil2', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/Likedin.png" alt=""></a>
+
+                    <a href="<?php the_field('lattes_Perfil2', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattess.png"  alt=""></a>
+                    
+                </div>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
             </div>
 
@@ -54,6 +72,13 @@
                 <img class="teste"  src="<?php echo get_template_directory_uri(); ?>/img/perfil-renato.png" alt="">
                 <h2>Renato Sardinha Lopes</h2>
                 <h3>ALUNO</h3>
+                <div class="perfil_devs">
+
+                    <a href="<?php the_field('linkedin_perfi30', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/Likedin.png" alt=""></a>
+
+                    <a href="<?php the_field('lattes_Perfil3', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattess.png"  alt=""></a>
+                    
+                </div>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
             </div>
 
@@ -61,6 +86,13 @@
                 <img class="teste"  src="<?php echo get_template_directory_uri(); ?>/img/perfil-jose.png" alt="">
                 <h2>José Lohame Capinga</h2>
                 <h3>ALUNO</h3>
+                <div class="perfil_devs">
+
+                    <a href="<?php the_field('linkedin_perfil4', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattess.png" alt=""></a>
+
+                    <a href="<?php the_field('lattes_Perfil4', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/Likedin.png"  alt=""></a>
+                    
+                </div>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
             </div>
         </div>
