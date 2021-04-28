@@ -30,8 +30,8 @@
                     <h2>Giani Carla Ito</h2>
                     <h3>PROFESSORA</h3>
                         <div class="perfil_devs">
-                            <a href="<?php the_field('linkedin_perfil0', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin.png" alt=""></a>
-                            <a href="<?php the_field('lattes_Perfil0', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes-.png"  alt=""></a>
+                            <a href="<?php the_field('linkedin_perfil0', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
+                            <a href="<?php the_field('lattes_Perfil0', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
                         </div>
                     <p>É professora do Curso de Ciência da Computação da UTFPR-SH e coordenadora do projeto Plataforma Web para Boas Práticas Globais na prevenção e combate à COVID-19</p>
                 </div>
@@ -46,9 +46,9 @@
                 <h3>ALUNO</h3>
                 <div class="perfil_devs">
 
-                    <a href="<?php the_field('linkedin_perfil1', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin.png" alt=""></a>
+                    <a href="<?php the_field('linkedin_perfil1', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
 
-                    <a href="<?php the_field('lattes_perfil1', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes-.png"  alt=""></a>
+                    <a href="<?php the_field('lattes_perfil1', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
 
                 </div>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
@@ -60,9 +60,9 @@
                 <h3>ALUNO</h3>
                 <div class="perfil_devs">
 
-                    <a href="<?php the_field('linkedin_perfil2', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin.png" alt=""></a>
+                    <a href="<?php the_field('linkedin_perfil2', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
 
-                    <a href="<?php the_field('lattes_Perfil2', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes-.png"  alt=""></a>
+                    <a href="<?php the_field('lattes_Perfil2', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
                     
                 </div>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
@@ -74,9 +74,9 @@
                 <h3>ALUNO</h3>
                 <div class="perfil_devs">
 
-                    <a href="<?php the_field('linkedin_perfi30', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin.png" alt=""></a>
+                    <a href="<?php the_field('linkedin_perfi30', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
 
-                    <a href="<?php the_field('lattes_Perfil3', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes-.png"  alt=""></a>
+                    <a href="<?php the_field('lattes_Perfil3', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
                     
                 </div>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
@@ -88,9 +88,9 @@
                 <h3>ALUNO</h3>
                 <div class="perfil_devs">
 
-                    <a href="<?php the_field('linkedin_perfil4', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin.png" alt=""></a>
+                    <a href="<?php the_field('linkedin_perfil4', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
 
-                    <a href="<?php the_field('lattes_Perfil4', $QuemSomos); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes-.png"  alt=""></a>
+                    <a href="<?php the_field('lattes_Perfil4', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
                     
                 </div>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
