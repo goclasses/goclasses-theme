@@ -32,13 +32,13 @@
 
         <div class="links-redes-contato">
           <div class="github-redes">
-            <a href="<?php the_field('link_github', $contato); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/github.svg" alt="github logo"></a>
+            <a href="<?php the_field('link_github', $contato); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/github.svg" alt="github logo"></a>
           </div>
           <div class="instagram-redes">
-            <a href="<?php the_field('link_instagram', $contato); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="instagram logo"></a>
+            <a href="<?php the_field('link_instagram', $contato); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="instagram logo"></a>
           </div>
           <div class="facebook-redes">
-            <a href="<?php the_field('link_facebook', $contato); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook logo"></a>
+            <a href="<?php the_field('link_facebook', $contato); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook logo"></a>
           </div>
         </div>
       </div>
