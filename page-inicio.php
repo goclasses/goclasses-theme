@@ -29,8 +29,9 @@
       } else {
         echo get_template_directory_uri() . '/img/imagem-pc.jpg';
       }  
-    ?>") no-repeat center;
+    ?>") rgba(0, 0, 0, 0.4) no-repeat center;
     background-size: cover;
+    background-blend-mode: multiply;
   }
 </style>
 

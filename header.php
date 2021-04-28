@@ -47,9 +47,9 @@
           <li><a href="/blog">Blog</a></li>    
           <?php if(is_user_logged_in()) { ?>
             <li>
-              <a class="desktop-link" href="http://goclasses.local/author/<?php
+              <a class="desktop-link" href="<?php
                 $user = wp_get_current_user();
-                echo $user->user_login;
+                echo home_url() . '/author/' . $user->user_login;
               ?>"><?php echo $user->display_name; ?></a>
               <input type="checkbox" id="show-user">
               <label for="show-user">Erick</label>
