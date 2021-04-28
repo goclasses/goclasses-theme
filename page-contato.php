@@ -14,15 +14,26 @@
 </section>
 
 <section class="contato container">
-  <form action="" id="form_contato" method="POST" class="contato_form grid-6 formphp">
+  <form action="<?php echo get_template_directory_uri(); ?>/enviar.php" id="form_contato" method="post" class="contato_form grid-6 formphp">
       <label for="nome">Nome</label>
       <input type="text" id="nome" name="nome" required>
       <label for="disciplina">Disciplina</label>
       <input type="text" id="disciplina" name="disciplina" required>
       <label for="email">E-mail</label>
       <input type="email" id="email" name="email" required>
+
+      <!-- Código para não ter spam de robôs -->
+      <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+      <input type="text" class="nao-aparece" name="leaveblank">
+      <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+      <input type="text" class="nao-aparece" name="dontchange" value="http://" >
+
+
+      <label for="assunto">Assunto</label>
+      <input type="text" id="assunto" name="assunto" required>
       <label for="mensagem">Mensagem</label>
       <textarea id="mensagem" name="mensagem" required></textarea>
+
       <button id="enviar" name="enviar" type="submit" class="botao-red-cinza">Enviar</button>
   </form>
 
@@ -46,6 +57,10 @@
   </div>
 
 </section>
+
+<!-- JS para exibição da mensagem de erro ou sucesso -->
+<script src="<?php echo get_template_directory_uri() ; ?>/js/simple-form.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 
 <!-- Fecha while -->
 <?php endwhile; else: ?>
