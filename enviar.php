@@ -1,49 +1,36 @@
 <?php
 
-// Trocar os valores abaixo
+require("./sendgrid-php/sendgrid-php.php");
 
-$emailenvio = 'seu_email_aqui';
-$url = 'urlaqui';
+$email_site = "email_seusite";
+$nome_site = "Nome do seu site";
 
-// Mude até aqui apenas
+$email_user = $_POST["email"];
+$nome_user = $_POST["nome"];
 
-$nome = $_POST['nome'];
-$disciplina = $_POST['disciplina'];
-$email = $_POST['email'];
-$assunto = $_POST['assunto'];
-$mensagem = $_POST['mensagem'];
-
-$body = "$mensagem\n\n---------------\n\n$nome\n$disciplina\n$email";
-
-if ($_POST['leaveblank'] != '' or $_POST['dontchange'] != 'http://') {
-
-  echo "Não foi possível enviar o e-mail. Tente novamente ou entre em contato com " . $emailenvio;
-  echo "<meta HTTP-EQUIV='Refresh' CONTENT='10;URL=" . $url . "'>";
-
-} else if (isset($_POST['email'])) {
-
-require ('./PHPMailer/PHPMailerAutoload.php');
-
-$mail = new PHPMailer;
-$mail->CharSet = 'UTF-8';
-$mail->WordWrap = 70;
-$mail->addAddress($emailenvio);
-
-$mail->From = $email;
-$mail->FromName = $nome;
-$mail->AddReplyTo($email, $nome);
-$mail->Subject = $assunto;
-
-$mail->Body = $body;
-
-if(!$mail->send()) {
-  echo "Não foi possível enviar o e-mail. Tente novamente ou entre em contato com " . $emailenvio;
-  echo "<meta HTTP-EQUIV='Refresh' CONTENT='10;URL=" . $url . "'>";
-} else {
-  echo "E-mail enviado com sucesso!";
-  echo "<meta HTTP-EQUIV='Refresh' CONTENT='2;URL=" . $url . "'>";
+$body_content = "";
+foreach( $_POST as $field => $value) {
+  if( $field !== "leaveblank" && $field !== "dontchange" && $field !== "enviar") {
+    $sanitize_value = filter_var($value, FILTER_SANITIZE_STRING);
+    $body_content .= "$field: $value \n";
+  }
 }
 
-}
+$email = new \SendGrid\Mail\Mail(); 
+$email->setFrom($email_site, $nome_site);
+$email->addTo($email_site, $nome_site);
 
-?>
+$email->setReplyTo($email_user, $nome_user);
+
+$email->setSubject("Formulário GoClasses");
+$email->addContent("text/plain", $body_content);
+
+$sendgrid = new \SendGrid("COLOQUE A API AQUI");
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo "Caught exception: ". $e->getMessage() ."\n";
+}
