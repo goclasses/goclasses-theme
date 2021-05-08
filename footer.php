@@ -6,13 +6,13 @@
 
       <div class="logos-footer grid-4">
         <div class="goclasses-footer-logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/logo_nome.svg" alt="logo goclasses">
+          <a href="<? site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_nome.svg" alt="logo goclasses"></a>
         </div>
         <div class="utfpr-footer-logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/utfpr.png" alt="logo utfpr">
+          <a href="http://www.utfpr.edu.br/campus/santahelena" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/utfpr.png" alt="logo utfpr"></a>
         </div>
         <div class="byncsa-footer">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/by-nc-sa.svg" alt="by-nc-sa svg">
+          <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/br/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/by-nc-sa.svg" alt="by-nc-sa svg"></a>
         </div>
       </div>
 
