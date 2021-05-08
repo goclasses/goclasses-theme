@@ -245,3 +245,66 @@ function remove_menu_items(){
   }
 }
 add_action( 'admin_menu', 'remove_menu_items', 999 );
+
+
+// Adicionando Nome E Sobrenome em signup
+add_action( 'register_form', 'myplugin_register_form' );
+function myplugin_register_form() {
+
+    $first_name = ( ! empty( $_POST['first_name'] ) ) ? trim( $_POST['first_name'] ) : '';
+    $last_name = ( ! empty( $_POST['last_name'] ) ) ? trim( $_POST['last_name'] ) : '';
+
+        ?>
+        <p>
+            <label for="first_name"><?php _e( 'Nome', 'mydomain' ) ?><br />
+                <input type="text" name="first_name" id="first_name" class="input" value="<?php echo esc_attr( wp_unslash( $first_name ) ); ?>" size="25" /></label>
+        </p>
+
+        <p>
+            <label for="last_name"><?php _e( 'Sobrenome', 'mydomain' ) ?><br />
+                <input type="text" name="last_name" id="last_name" class="input" value="<?php echo esc_attr( wp_unslash( $last_name ) ); ?>" size="25" /></label>
+        </p>
+
+        <?php
+    }
+
+    //2. Add validation. In this case, we make sure first_name is required.
+    add_filter( 'registration_errors', 'myplugin_registration_errors', 10, 3 );
+    function myplugin_registration_errors( $errors, $sanitized_user_login, $user_email ) {
+
+        if ( empty( $_POST['first_name'] ) || ! empty( $_POST['first_name'] ) && trim( $_POST['first_name'] ) == '' ) {
+            $errors->add( 'first_name_error', __( '<strong>Erro</strong>: Deve incluir um Nome.', 'mydomain' ) );
+        }
+        if ( empty( $_POST['last_name'] ) || ! empty( $_POST['last_name'] ) && trim( $_POST['first_name'] ) == '' ) {
+            $errors->add( 'last_name_error', __( '<strong>Erro</strong>: Deve incluir um Sobrenome.', 'mydomain' ) );
+        }
+        return $errors;
+    }
+
+    //3. Finally, save our extra registration user meta.
+    add_action( 'user_register', 'myplugin_user_register' );
+    function myplugin_user_register( $user_id ) {
+        if ( ! empty( $_POST['first_name'] ) ) {
+            update_user_meta( $user_id, 'first_name', trim( $_POST['first_name'] ) );
+            update_user_meta( $user_id, 'last_name', trim( $_POST['last_name'] ) );
+        }
+    }
+
+//Registro apenas para email da utfpr
+function is_valid_email_domain($login, $email, $errors ){
+  $valid_email_domains = array("alunos.utfpr.edu.br","utfpr.edu.br");// whitelist email domain lists
+  $valid = false;
+  foreach( $valid_email_domains as $d ){
+  $d_length = strlen( $d );
+  $current_email_domain = strtolower( substr( $email, -($d_length), $d_length));
+  if( $current_email_domain == strtolower($d) ){
+  $valid = true;
+  break;
+  }
+  }
+  // if invalid, return error message
+  if( $valid === false ){
+  $errors->add('domain_whitelist_error',__( '<strong>Erro</strong>: Apenas registro para email educacional da UTFPR' ));
+  }
+ }
+ add_action('register_post', 'is_valid_email_domain',10,3 );
