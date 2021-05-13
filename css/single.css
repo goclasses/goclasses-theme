@@ -52,3 +52,16 @@
 .links_arquivos #arquivo_artigo {
   margin-right: 15px;
 }
+
+a.edit_button {
+  display: block;
+  border: 1px solid red;
+  margin-bottom: 15px;
+}
+
+a.edit_button p {
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 0;
+}
