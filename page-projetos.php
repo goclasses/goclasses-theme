@@ -1,5 +1,5 @@
 <?php 
-  // Template Name: Página Quem Somos
+  // Template Name: Página Projetos
   get_header(); 
 ?>
 

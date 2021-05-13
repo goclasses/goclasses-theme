@@ -196,11 +196,11 @@ function goclasses_css(){
   wp_enqueue_style('goclasses-projetos', get_template_directory_uri() . '/css/projetos.css');
   wp_enqueue_style('goclasses-material', get_template_directory_uri() . '/css/material.css');
   wp_enqueue_style('goclasses-contato', get_template_directory_uri() . '/css/contato.css');
-  wp_enqueue_style('goclasses-contato', get_template_directory_uri() . '/css/contato.css');
   wp_enqueue_style('goclasses-index', get_template_directory_uri() . '/css/index.css');
   wp_enqueue_style('goclasses-archive', get_template_directory_uri() . '/css/archive.css');
   wp_enqueue_style('goclasses-single', get_template_directory_uri() . '/css/single.css');
   wp_enqueue_style('goclasses-author', get_template_directory_uri() . '/css/author.css');
+  wp_enqueue_style('goclasses-giani', get_template_directory_uri() . '/css/giani.css');
   // Folha de estilo Font Awesome para ícones
   wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 }

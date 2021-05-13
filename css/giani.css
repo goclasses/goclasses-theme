@@ -1,0 +1,124 @@
+.cabecalho-giani {
+  height: 220px;
+  background: url("../img/imagem-pc.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.pagina-giani {
+  position: relative;
+  top: -120px;
+}
+
+.giani-info::after,
+.giani-info::before,
+.resumo_giani::after,
+.resumo_giani::before,
+.carreira_giani::after,
+.carreira_giani::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.giani-info {
+  background: #013;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.giani-info h1 {
+  font-size: 2.825em;
+  font-family: "Varela Round";
+}
+
+.giani-info .area-atuacao {
+  font-size: 1em;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.giani-info .social_logo {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.giani-info > div > ul > a img {
+  margin-top: 2px;
+  margin-left: 1px;
+}
+
+.giani-info > div > ul > a:nth-child(4) img {
+  margin-left: 3px;
+}
+
+.giani-info > div > ul p {
+  display: inline-block;
+  color: #fff;
+}
+
+.imagem_giani img {
+  display: table;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.resumo_giani {
+  margin: 30px 0;
+  color: #fff;
+  background: #013;
+  padding: 30px 5%;
+}
+
+.resumo_giani p {
+  text-align: center;
+  font-size: 1.125em;
+}
+
+.carreira_giani {
+  color: #fff;
+  background: #013;
+  padding: 30px 0;
+}
+
+.carreira_giani h2 {
+  display: table;
+  margin: 0 auto 60px auto;
+  font-family: 'Varela Round';
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.carreira_giani h2::before {
+  content: '';
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background: url("../img/plano-de-carreira.png") no-repeat center;
+  background-size: cover;
+  margin-right: 20px;
+  position: relative;
+  top: 15px;
+}
+
+.projetos_giani {
+  margin-bottom: 30px;
+  padding: 0 5%;
+}
+
+.projetos_giani h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.projetos_giani p.area_projeto {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 1.125em;
+  
+}
+
