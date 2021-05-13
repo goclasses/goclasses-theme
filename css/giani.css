@@ -121,3 +121,25 @@
   font-size: 1.125em;
 }
 
+@media (max-width: 739px) {
+  .giani-info {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .giani-info > div:nth-child(1) {
+    order: 2;
+  }
+
+  .giani-info > div:nth-child(2) {
+    order: 1;
+  }
+
+  .giani-info > div:nth-child(2) img {
+    margin-bottom: 15px;
+  }
+
+}
+
