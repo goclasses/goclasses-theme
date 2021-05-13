@@ -155,8 +155,24 @@ function goclasses_post_types() {
       'all_items' => 'Todos Projetos',
       'singular_name' => 'Projeto'
     ),
-    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-portfolio'
+  ));
+
+  register_post_type('projeto_giani', array(
+    'capability_type' => 'projeto_giani',
+    'map_meta_cap' => true,
+    'supports' => array('title', 'editor'),
+    'rewrite' => array('slug' => 'projetos_giani'),
+    'has_archive' => false,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Projetos da Giani',
+      'add_new_item' => 'Adicionar Novo Projeto da Giani',
+      'edit_item' => 'Editar Projeto da Giani',
+      'all_items' => 'Todos Projetos da Giani',
+      'singular_name' => 'Projeto da Giani'
+    ),
+    'menu_icon' => 'dashicons-welcome-learn-more'
   ));
 }
 
