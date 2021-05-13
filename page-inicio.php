@@ -72,7 +72,7 @@
   </div>
   <div class="grid-5">
     <h2>O projeto...</h2>
-    <?php the_field('o_projeto', $inicio); ?>
+    <p><?php the_field('o_projeto'); ?></p>
   </div>
 </section>
 <!-- Sobre o projeto termina -->
