@@ -60,23 +60,27 @@
       </div>
       <div class="carreira_giani">
         <h2>Carreira</h2>
+
+        <?php
+          $projetosGiani = new WP_Query(array(
+            'posts_per_page' => -1,
+            'post_type' => 'projeto_giani'
+          ));
+
+          while($projetosGiani->have_posts()) {
+            $projetosGiani->the_post(); 
+        ?>
+
         <div class="grid-12">
           <div class="projetos_giani">
-            <h3>Nome do Projeto (2020-2021)</h3>
-            <p class="area_projeto">Área do Projeto</p>
-            <p class="descricao_projeto_giani">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="projetos_giani">
-            <h3>Nome do Projeto (2020-2021)</h3>
-            <p class="area_projeto">Área do Projeto</p>
-            <p class="descricao_projeto_giani">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="projetos_giani">
-            <h3>Nome do Projeto (2020-2021)</h3>
-            <p class="area_projeto">Área do Projeto</p>
-            <p class="descricao_projeto_giani">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3><?php the_title(); ?> (<?php the_field('ano_inicio_do_projeto') ?>-<?php the_field('ano_termino_do_projeto') ?>)</h3>
+            <p class="area_projeto"><?php the_field('area_do_projeto') ?></p>
+            <p class="descricao_projeto_giani"><?php the_content(); ?></p>
           </div>
         </div>
+
+        <?php } ?>
+
       </div>
     </div>
   </main>
