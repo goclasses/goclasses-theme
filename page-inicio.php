@@ -1,6 +1,7 @@
 <?php 
   // Template Name: Página Inicial
   get_header(); 
+  $id_pagina = get_page_by_title('inicio');
 ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -72,7 +73,7 @@
   </div>
   <div class="grid-5">
     <h2>O projeto...</h2>
-    <p><?php the_field('o_projeto'); ?></p>
+    <p><?php the_field('o_projeto', $id_pagina); ?></p>
   </div>
 </section>
 <!-- Sobre o projeto termina -->
