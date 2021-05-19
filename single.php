@@ -9,14 +9,7 @@
       <?php while ( have_posts() ) {
         the_post(); 
       ?>
-        <?php
 
-          if(get_current_user_id() == get_the_author_meta('id')) { ?>
-            <a href="<? echo get_edit_post_link(); ?>" class="edit_button"><p>EDITAR</p></a>
-          <?php }
-
-        ?>
-        
         <h1><?php the_title(); ?></h1>
         <p class="info-single-post"><?php the_author_meta( 'nicename'); ?> - <?php the_date('d/m/Y'); ?></p>
 
@@ -34,6 +27,14 @@
         </div>
 
       <?php } ?>
+
+      <?php
+
+          if(get_current_user_id() == get_the_author_meta('id')) { ?>
+            <a href="<? echo get_edit_post_link(); ?>" class="edit_button">EDITAR</a>
+          <?php }
+
+        ?>
     </div>
   </div>
 

@@ -53,15 +53,14 @@
   margin-right: 15px;
 }
 
-a.edit_button {
-  display: block;
-  border: 1px solid red;
-  margin-bottom: 15px;
-}
-
-a.edit_button p {
+a.edit_button { 
+  display: inline-block;
   color: red;
+  font-size: 1.125em;
+  padding: 5px 10px;
+  border: 1px solid red;
   text-transform: uppercase;
-  text-align: center;
-  padding: 5px 0;
+  border-radius: 50px;
+  outline: none;
+  margin-top: 30px;
 }
