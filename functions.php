@@ -217,6 +217,7 @@ function goclasses_css(){
   wp_enqueue_style('goclasses-single', get_template_directory_uri() . '/css/single.css');
   wp_enqueue_style('goclasses-author', get_template_directory_uri() . '/css/author.css');
   wp_enqueue_style('goclasses-giani', get_template_directory_uri() . '/css/giani.css');
+  wp_enqueue_style('goclasses-search', get_template_directory_uri() . '/css/search.css');
   // Folha de estilo Font Awesome para ícones
   wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 }

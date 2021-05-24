@@ -72,8 +72,8 @@
         </ul>
       </div>
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-      <form action="#" class="search-box">
-        <input type="text" placeholder="Digite algo para pesquisar..." required>
+      <form action="<?php echo home_url( '/' ); ?>" class="search-box" method="get">
+        <input type="text" placeholder="Digite algo para pesquisar..." required value="<?php echo get_search_query(); ?>" name="s">
         <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
       </form>
     </nav>

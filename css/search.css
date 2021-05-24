@@ -1,0 +1,29 @@
+.search-page-go h2{
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+.todas-pesquisas::after, .todas-pesquisas::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.todas-pesquisas {
+  margin-bottom: 30px;
+}
+
+.todas-pesquisas h3 {
+  margin-top: 15px;
+  font-size: 2em;
+}
+
+.todas-pesquisas .links-search {
+  padding-left: 15px;
+  border-left: 1px solid black;
+  margin: 15px 0 15px 30px;
+}
+
+.todas-pesquisas .links-search a {
+  font-size: 1.125em;
+}
