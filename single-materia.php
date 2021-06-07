@@ -14,6 +14,18 @@
     <section class="material">
         <div class="container part1">
 
+          <div class="grid-4 espacamento">
+                <a href="<?php echo get_post_type_archive_link( 'material' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">
+                <div class="imagem-fundo">
+                    <h6>MATERIAIS DIDATICOS</h6>
+                    <div class="imagem-material">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/material/materiais.png" alt="">
+                    </div> 
+                    <h3>Coleções contendo dicas, planos de aulas, materiais para campanhas</h3>
+                </div>
+                </a>
+            </div>
+
             <div class="grid-4 espacamento">
                 <a href="<?php echo get_post_type_archive_link( 'artigo' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">
                 <div class="imagem-fundo">
@@ -34,18 +46,6 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/material/assuntos.png" alt="">
                     </div> 
                     <h3>Notícias sobre, documentários, vídeos relacionados.</h3>
-                </div>
-                </a>
-            </div>
-
-            <div class="grid-4 espacamento">
-                <a href="<?php echo get_post_type_archive_link( 'material' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">
-                <div class="imagem-fundo">
-                    <h6>MATERIAIS DIDATICOS</h6>
-                    <div class="imagem-material">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/material/materiais.png" alt="">
-                    </div> 
-                    <h3>Coleções contendo dicas, planos de aulas, materiais para campanhas</h3>
                 </div>
                 </a>
             </div>
