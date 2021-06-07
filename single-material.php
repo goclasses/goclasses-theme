@@ -21,7 +21,7 @@
       <?php
 
           if(get_current_user_id() == get_the_author_meta('id')) { ?>
-            <a href="<? echo get_edit_post_link(); ?>" class="edit_button">EDITAR</a>
+            <a href="<?php echo get_edit_post_link(); ?>" class="edit_button">EDITAR</a>
           <?php }
 
         ?>

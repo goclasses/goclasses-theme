@@ -21,7 +21,8 @@
 			'post_type' => is_archive() ? get_queried_object()->name : false,
       'category_name' => htmlspecialchars($_GET["mat"]),
 			'order' => 'ASC',
-			'orderby' => 'title'
+			'orderby' => 'title',
+			'posts_per_page' => -1,
     ));
 		if($archiveConteudo->have_posts()){
 	
