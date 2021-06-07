@@ -6,7 +6,7 @@
 
 <section class="cabecalho-contato">
   <div>
-    <h1>MATERIAIS PARA AS DICIPLINAS DE...</h1>
+    <h1>MATERIAIS PARA AS DISCIPLINAS DE...</h1>
   </div>
 </section>
 

@@ -10,57 +10,15 @@
 
 <!-- Carrossel Começa -->
 
-<?php
-  $homepageCarrossel = new WP_Query(array(
-    'posts_per_page' => 3,
-    'category_name' => 'destaque',
-    'post_type' => array('post', 'artigo')
-  ));
-  $contador_style = 1;
-  while($homepageCarrossel->have_posts()) {
-    $homepageCarrossel->the_post(); 
-?>
-
-<style type="text/css">
-  .noticia-<?php echo $contador_style; ?> {
-    background: url("<?php 
-      $value = get_field('imagem');
-      if( $value ) {
-        echo $value;
-      } else {
-        echo get_template_directory_uri() . '/img/imagem-pc.jpg';
-      }  
-    ?>") rgba(0, 0, 0, 0.4) no-repeat center;
-    background-size: cover;
-    background-blend-mode: multiply;
-  }
-</style>
-
-<?php 
-    $contador_style++;
-  }
-?>
-<section class="carrossel" data-slide="carrossel">
-  <?php
-    $contador_carrossel = 1;
-    while($homepageCarrossel->have_posts()) {
-      $homepageCarrossel->the_post(); 
-  ?>
-
-    <div class="noticia-<?php echo $contador_carrossel; ?>">
+<section class="carrossel">
+    <div class="noticia">
       <div class="grid-12">
         <div class="container">
-            <h2><?php echo mb_strimwidth(get_the_title(), 0, 45, '...'); ?></h2>
-            <p><?php echo mb_strimwidth(get_the_content(), 0, 140, '...'); ?></p>
-            <a href="<?php the_permalink(); ?>" class="botao-red">saiba mais</a>
+            <h2>“A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original”.</h2>
+            <p>Albert Einstein</p>
         </div>
       </div>
     </div>
-
-  <?php 
-      $contador_carrossel++;
-    } 
-  ?>
 </section>
 <!-- Carrossel termina -->
 
@@ -132,7 +90,7 @@
 
       <div class="ultimo-po-individual">
         <h3><?php the_title(); ?></h3>
-        <p class="ultimo-post-ind-info"><?php the_author_meta( 'nicename'); ?> - <?php the_time('d/m/Y'); ?></p>
+        <p class="ultimo-post-ind-info"><?php the_time('d/m/Y'); ?></p>
         <p class="ultimo-post-ind-desc">
           <?php echo wp_trim_words(get_the_content(), 12); ?>
         </p>

@@ -32,8 +32,12 @@
     border-radius: 20px;
     background:  #001133;
     width: 270px;
-    height: 320px;
+    height: 270px;
     text-align: center;
+}
+
+.imagem-fundo:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .material h3 {
@@ -64,7 +68,6 @@
         width: 240px;
     }
 
-
 }
 /*Mobile*/
 @media only screen and (max-width:739px){
@@ -78,5 +81,4 @@
         padding-bottom: 0px;
         text-align: center;
     }
-
 }

@@ -22,11 +22,10 @@
       <div class="logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_nome.svg" alt=""></a></div>
       <ul class="links">
           <li><a href="/quemsomos">Quem Somos</a></li>
-          <li><a href="/projetos">Projetos</a></li>
           <li>
-            <a href="<?php echo get_post_type_archive_link('materia'); ?>" class="desktop-link">Materiais Didáticos</a>
+            <a href="<?php echo get_post_type_archive_link('materia'); ?>" class="desktop-link">Disciplinas</a>
             <input type="checkbox" id="show-materiais">
-            <label for="show-materiais">Materiais Didáticos</label>
+            <label for="show-materiais">Disciplinas</label>
             <ul>
               <?php
                 $headerMaterias = new WP_Query(array(
@@ -43,8 +42,8 @@
       
             </ul>
           </li>
-          <li><a href="/contato">Contato</a></li>    
-          <li><a href="/blog">Blog</a></li>    
+          <li><a href="/projetos">Projetos</a></li>
+          <li><a href="/contato">Contato</a></li>
           <?php if(is_user_logged_in()) { ?>
             <li>
               <a class="desktop-link" href="<?php
