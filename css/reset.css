@@ -14,7 +14,7 @@
  * Remove list-style
  */ 
 
-ol, ul {
+ul {
 	list-style: none;
 }
 
