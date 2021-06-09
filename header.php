@@ -19,7 +19,7 @@
       <input type="checkbox" id="show-menu">
       <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
       <div class="content">
-      <div class="logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_nome.svg" alt=""></a></div>
+      <div class="logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_nome_azul.svg" alt=""></a></div>
       <ul class="links">
           <li><a href="/quemsomos">Quem Somos</a></li>
           <li>
