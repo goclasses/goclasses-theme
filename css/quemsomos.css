@@ -26,8 +26,13 @@
 
 .perfil_equipe{
     padding-top: 60px;   
-    background: #0D2759;
+    background: #f0f5ff;
     height: 990px;
+}
+
+.perfil_devs img {
+    background: #121314;
+    border-radius: 50%;
 }
 
 .teste{
@@ -53,21 +58,21 @@ section.perfil_equipe > div.container > div.grid-4 > img{
     padding-top: 5px; 
     text-align: center;
     font-size: 22px;
-    color: white;   
+    color: #121314;   
 }
 
 .perfil_equipe h3{
     padding-top: 0px; 
     text-align: center;
     font-size: 10px;
-    color: white;   
+    color: #121314;   
 }
 
 .perfil_equipe p{
     padding-top: 5px;  
     text-align: center;
     font-size: 13px;
-    color: white;   
+    color: #121314;   
 }
 
 .perfil_equipe h3::before{
@@ -75,7 +80,7 @@ section.perfil_equipe > div.container > div.grid-4 > img{
     display: block;
     width: 90px;
     height: 1px;
-    background: white ;
+    background: #121314 ;
     margin: 3px auto;
 }
 

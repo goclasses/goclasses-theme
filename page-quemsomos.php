@@ -5,7 +5,7 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <section class="cabecalho">
+    <section class="cabecalho-contato">
         <div>
             <h1>QUEM SOMOS?</h1>
         </div>
@@ -13,11 +13,14 @@
 
     <section class="container missao_sobre">
         <div class="grid-7 informativo">
-            <p><?php the_field('sobre_nos', $QuemSomos); ?></p>
+        <p>Somos uma equipe do projeto para Recursos Educacionais Abertos da UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ.</p> 
+        <p>A equipe é coordenada pela professora Giani Carla Ito com participação de acadêmicos do curso de ciência da computação.</p>
+        <p>O aluno bolsista Erick Oliveira dos Santos foi o web designer e responsável pelo desenvolvimento do portal.</p>
+        <p>Como voluntários ao projeto participaram os alunos Rander Carneiro da UTFPR-SH e José Capina da UTFPR-PG.</p>
         </div>
         <div class="grid-3">
             <div class="icone_equipe">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/equipe-de-trabalho.svg" alt="Icone Equipe">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/meeting.png" alt="Icone Equipe">
             </div>
         </div>
     </section>
@@ -37,7 +40,7 @@
                                 <a href="<?php the_field('linkedin_perfil0', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
                                 <a href="<?php the_field('lattes_perfil0', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
                             </div>
-                        <p>Professora do Curso de Ciência da Computação da UTFPR-SH e coordenadora do projeto Plataforma Web para GoCLasses</p>
+                        <p>Professora do Curso de Ciência da Computação da UTFPR-SH e coordenadora do projeto Portal da Programação GoClasses.</p>
                     </div>
                 </a>
             </div>
@@ -56,7 +59,7 @@
                 <a href="<?php the_field('lattes_perfil1', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png" alt=""></a>
                     
                 </div>
-                <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, responsável pelo back-end, front-end e bolsista no projeto</p>
+                <p>Graduando em Ciência da Computação na UTFPR–SH. Aluno bolsista,   responsável pelo desenvolvimento do portal da programação GoClasses.</p>
             </div>
 
             <div class="grid-4 perfil-2">
@@ -70,7 +73,7 @@
                     <a href="<?php the_field('lattes_perfil2', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
 
                 </div>
-                <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, ajuda no desenvolvimento da parte de Web-Design do site auxiliando no front-end.</p>
+                <p>Graduando em Ciência da Computação na UTFPR–SH. Aluno voluntário do projeto, colaborou com o design do portal.</p>
             </div>
 
 
@@ -85,7 +88,7 @@
                 <a href="<?php the_field('lattes_perfil4', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
                     
                 </div>
-                <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
+                <p>Graduando em Ciência da Computação na UTFPR–PG. Aluno voluntário do projeto colaborou com a inserção e elaboração do conteúdo do portal.</p>
             </div>
         </div>
     </section>
