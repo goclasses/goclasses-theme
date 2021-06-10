@@ -1,52 +1,23 @@
 /* Carrossel */
 
-.carrossel {
-  color: #fff;
-  background: #001133;
-}
-
-.carrossel h2{
-  font-family: 'Varela Round';
-  font-size: 2.25em;
-  line-height: 1em;
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.carrossel p {
-  font-family: 'Varela Round';
-  font-size: 1.825em;
-  text-align: center;
-}
-
-.carrossel > div {
-  padding: 120px 0 200px 0;
-}
-
 .noticia {
-  background: url("http://goclasses.sh.utfpr.edu.br/wp-content/uploads/2021/04/christian-wiediger-WkfDrhxDMC8-unsplash-1024x683.jpg") rgba(0, 0, 0, 0.4) no-repeat center;
+  background: #f0f5ff;
   background-size: cover;
   background-blend-mode: multiply;
-  margin-bottom: 60px;
 }
 
 /* Sobre */
 
 .sobre-inicio {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
-.sobre-inicio h2 {
-  font-family: 'Varela Round';
-  font-size: 2.25em;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+.sobre-inicio p:first-child {
+  margin-top: 90px;
 }
-
 .sobre-inicio p {
-  font-size: 1.125em;
-  max-width: 450px;
+  font-size: 2em;
+  max-width: 80%;
 }
 
 .logo-sobre img {

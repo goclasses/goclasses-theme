@@ -9,36 +9,25 @@
 <!-- Começa código da página -->
 
 <!-- Carrossel Começa -->
-
 <section class="carrossel">
     <div class="noticia">
-      <div class="grid-12">
-        <div class="container">
-            <h2>“A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original”.</h2>
-            <p>Albert Einstein</p>
+    <section class="container sobre-inicio">
+      <div class="grid-8">
+        <p>Goclasses é um portal Web para inserção e publicação de materiais didáticos.</p>
+        <p>Os conteúdos são gratuitos e foram desenvolvidos no projeto de Recursos Educacionais Abertos da UTFPR.</p>
+      </div>
+      <div class="grid-4">
+        <div class="logo-sobre">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/humanbrain.png" alt="Logo do site GoClasses">
         </div>
       </div>
+    </section>
     </div>
 </section>
 <!-- Carrossel termina -->
 
-<!-- Sobre o projeta começa -->
-<section class="container sobre-inicio">
-  <div class="grid-6">
-    <div class="logo-sobre">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo do site GoClasses">
-    </div>
-  </div>
-  <div class="grid-5">
-    <h2>O projeto...</h2>
-    <p><?php the_field('o_projeto', $id_pagina); ?></p>
-  </div>
-</section>
-<!-- Sobre o projeto termina -->
-
 <!-- Materiais começa -->
 <section class="materiais-inicio">
-  <h2>MATERIAIS PARA AS DICIPLINAS DE...</h2>
   <div class="container materiais-3">
   <?php
     $homepageMaterias = new WP_Query(array(
