@@ -29,8 +29,7 @@
 /* Materiais */
 
 .materiais-inicio {
-  background: #013;
-  color: #fff;
+  color: #121314;
   padding: 30px 0;
 }
 
@@ -47,21 +46,21 @@
   padding-bottom: 60px;
 }
 
+.imagem-material img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
 .material-individual {
-  padding: 30px 0;
-  border: 2px solid #fff;
+  padding: 0 0 30px 0;
+  border: 2px solid #121314;
   border-radius: 20px;
   text-align: center;
   display: inline-block;
   width: 270px;
   height: 300px;
-}
-
-.imagem-material img {
-  display: block;
-  margin: 0 auto 30px auto;
-  height: 90px;
-  width: 90px;
 }
 
 .material-individual h3 {
@@ -75,7 +74,7 @@
 }
 
 div.materiais-3 div.grid-4:nth-child(3n - 1) > div {
-  display: block  ;
+  display: table;
   margin: 0 auto;
 }
 
@@ -83,53 +82,23 @@ div.materiais-3 div.grid-4:nth-child(3n + 3) > div {
   float: right;
 }
 
-/* Ultimos */
+/* Pessoa */
 
-.ultimos {
-  padding: 60px 0;
+.pessoas-destaque-container {
+  background: #f0f5ff;
 }
 
-.ultimos h2 {
-  text-transform: uppercase;
-  font-family: 'Varela Round';
-  font-size: 1.5em;
-  display: inline-block;
+.pessoa-destaque img {
+  height: 200px;
 }
 
-.ultimos h2::after {
-  content: '';
-  display: block;
-  height: 1px;
-  width: auto;
-  background: #121314;
+.pessoa-destaque .destaque-nome {
+  text-align: center;
+  font-size: 1.825em;
 }
 
-.ultimos h3 {
-  text-transform: uppercase;
-  font-family: 'Varela Round';
-  font-size: 1.125em;
-}
-
-.ultimo-po-individual {
-  margin-top: 30px;
-  max-width: 250px;
-  padding-left: 10px;
-  border-left: 1px solid #121314;
-}
-
-.ultimo-po-individual a {
-  margin: 10px 0;
-}
-
-.ultimo-post-ind-info {
-  margin: 5px 0;
-  color: #28292C;
-  font-style: italic;
-  font-size: 0.875em;
-}
-
-.ultimo-post-ind-desc {
-  margin: 10px 0;
+.pessoa-destaque-box {
+  border: none;
 }
 
 /* Responsivo */

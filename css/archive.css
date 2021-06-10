@@ -30,13 +30,6 @@
   background: #013;
 }
 
-.imagem-material img {
-  display: block;
-  margin: 0 auto 30px auto;
-  height: 90px;
-  width: 90px;
-}
-
 .material-individual-archive h3 {
   font-family: 'Varela Round';
   font-size: 1.125em;
