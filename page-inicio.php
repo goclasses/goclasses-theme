@@ -61,43 +61,38 @@
 <!-- Pessoas destaques -->
 <section class="materiais-inicio pessoas-destaque-container">
   <h2>ALUNOS DESTAQUES</h2>
+
   <div class="container materiais-3">
+
+  <?php
+    $homepageMaterias = new WP_Query(array(
+      'posts_per_page' => 3,
+      'post_type' => 'aluno_destaque'
+    ));
+
+    while($homepageMaterias->have_posts()) {
+      $homepageMaterias->the_post(); ?>
+
+  
     <div class="grid-4">
       <div class="pessoa-destaque">
         <div class="material-individual pessoa-destaque-box">
           <div class="pessoa-destaque-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/perfil-erick.png" alt="">
+            <img src="<?php the_field('foto_aluno'); ?>" alt="">
           </div>
-          <p class="destaque-nome">Erick santos</p>
-          <p class="destaque-disciplina">Linguagem de Programação Estruturada</p>
+          <p class="destaque-nome"><?php the_title(); ?></p>
+          <p class="destaque-disciplina"><?php the_category(); ?></p>
+          <p class="destaque-semestre"><?php the_field('semestre'); ?></p>
         </div>
       </div>
     </div>
+  
+    <?php } ?>
 
-    <div class="grid-4">
-      <div class="pessoa-destaque">
-        <div class="material-individual pessoa-destaque-box">  
-          <div class="pessoa-destaque-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/perfil-Giani.png" alt="">
-          </div>
-          <p class="destaque-nome">Giani Carla Ito</p>
-          <p class="destaque-disciplina">Comunicação de Dados</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid-4">
-      <div class="pessoa-destaque">
-        <div class="material-individual pessoa-destaque-box">
-          <div class="pessoa-destaque-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/perfil-rander.png" alt="">
-            <p class="destaque-nome">Rander Carneiro</p>
-            <p class="destaque-disciplina">Programação Paralela e Distribuída</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+
+  
+
 </section>
 <!-- Pessoas destaques -->
 

@@ -90,6 +90,9 @@ div.materiais-3 div.grid-4:nth-child(3n + 3) > div {
 
 .pessoa-destaque img {
   height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .pessoa-destaque .destaque-nome {

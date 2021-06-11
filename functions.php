@@ -174,6 +174,24 @@ function goclasses_post_types() {
     ),
     'menu_icon' => 'dashicons-welcome-learn-more'
   ));
+  
+  register_post_type('aluno_destaque', array(
+    'capability_type' => 'aluno_destaque',
+    'map_meta_cap' => true,
+    'supports' => array('title', 'editor'),
+    'rewrite' => array('slug' => 'alunos_destaque'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Alunos Destaques',
+      'add_new_item' => 'Adicionar Novo Aluno Destaque',
+      'edit_item' => 'Editar Aluno Destaque',
+      'all_items' => 'Todos Alunos Destaque',
+      'singular_name' => 'Aluno Destaque'
+    ),
+    'taxonomies' => array('category'),
+    'menu_icon' => 'dashicons-groups'
+  ));
 }
 
 add_action('init', 'goclasses_post_types');
