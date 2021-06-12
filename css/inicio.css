@@ -124,11 +124,6 @@ div.materiais-3 div.grid-4:nth-child(3n + 3) > div {
 /* Smartphone */
 @media (max-width: 739px) {
 
-  .carrossel > div {
-    padding-top: 75px;
-    height: 300px;
-  }
-
   .carrossel h2 {
     font-size: 1.5em;
   }

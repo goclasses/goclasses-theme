@@ -12,11 +12,11 @@
 <section class="carrossel">
     <div class="noticia">
     <section class="container sobre-inicio">
-      <div class="grid-8">
+      <div class="grid-7">
         <p>Goclasses é um portal Web para inserção e publicação de materiais didáticos.</p>
         <p>Os conteúdos são gratuitos e foram desenvolvidos no projeto de Recursos Educacionais Abertos da UTFPR.</p>
       </div>
-      <div class="grid-4">
+      <div class="grid-5">
         <div class="logo-sobre">
           <img src="<?php echo get_template_directory_uri(); ?>/img/humanbrain.png" alt="Logo do site GoClasses">
         </div>
