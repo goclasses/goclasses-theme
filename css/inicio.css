@@ -67,6 +67,10 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.pessoa-destaque-box:hover {
+  box-shadow: none;
+}
+
 .material-individual h3 {
   font-family: 'Varela Round';
   font-size: 1.125em;
