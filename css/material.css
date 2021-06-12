@@ -4,86 +4,55 @@
     background-size: cover;
 }
 
-.material{
-    padding-top:60px ;
-    padding-bottom: 30px;
-}
-
-.single-post a {
-    text-decoration: underline;
-}
-
-.material h1 {
+.post-types-container {
+    background: #013;
     text-align: center;
-    font-size: 40px;
-    color: black;
-    padding-bottom:60px ;
+    padding: 10px 0;
 }
 
-.material h6{
-    font-family: 'Varela Round';
-    font-size: 1.125em;
-    text-transform: uppercase;
-    max-width: 160px;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 30px;
+.post-types-container a {
     color: white;
-    text-align: center;
-}
-
-.imagem-fundo {
-    padding: 30px 0;
-    border-radius: 20px;
-    background:  #001133;
-    width: 270px;
-    height: 270px;
-    text-align: center;
-}
-
-.imagem-fundo:hover {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.material h3 {
-    font-family: 'Varela Round';
-    font-size: 0.825em;
+    font-size: 1.25em;
     text-transform: uppercase;
-    max-width: 250px;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    color: white;
-    text-align: center;
 }
 
-.part2{
-    padding-top: 0px;
-    padding-bottom: 60px;
+.post-types-container a:hover {
+    color: yellow;
 }
 
-/**----------------------------Responsivo----------------------------**/
-
-/*Tablet*/
-@media only screen and (min-width:740px) and (max-width:979px){
-    section.material > div.part1 > div.grid-4 > div.imagem-fundo{
-        width: 240px;
-    }
-    section.material > div.part2 > div.grid-4 > div.imagem-fundo{
-        width: 240px;
-    }
-
+.post-types-container li {
+    display: inline-block;
+    padding: 0 15px;
 }
-/*Mobile*/
-@media only screen and (max-width:739px){
-    .cabecalho{
-        margin-top: 0px;
-    }
-    .espacamento{
-        padding-bottom: 10px;
-    }
-    .material{
-        padding-bottom: 0px;
-        text-align: center;
-    }
+
+.carrossel-lpe p, .carrossel-lpe p:first-child,
+.carrossel-cdd p, .carrossel-cdd p:first-child,
+.carrossel-ppd p, .carrossel-ppd p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.carrossel-lpe .grid-7 {
+    padding-top: 30px;
+}
+
+.carrossel-lpe img {
+    padding-top: 20px;
+}
+
+.carrossel-ppd .grid-7 {
+    padding-top: 80px;
+}
+
+.carrossel-ppd img {
+    height: 300px;
+}
+
+.carrossel-cdd .grid-7 {
+    padding-top: 30px;
+}
+
+.carrossel-cdd img {
+    padding-top: 50px;
+    height: 300px;
 }
