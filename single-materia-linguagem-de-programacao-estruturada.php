@@ -7,8 +7,9 @@
       <div class="noticia">
       <section class="container sobre-inicio">
         <div class="grid-7">
-          <p>A linguagem C é uma das mais bem sucedidas linguagens de alto nível já criadas e é considerada uma das linguagens de programação mais utilizadas de todos os tempos.</p>
-          <p class="autor-frase-materia">André Backes</p>
+          <h1>Linguagem de Programação Estruturada</h1>
+          <p>"A linguagem C é uma das mais bem sucedidas linguagens de alto nível já criadas e é considerada uma das linguagens de programação mais utilizadas de todos os tempos."</p>
+          <p class="autor-frase-materia">- André Backes</p>
         </div>
         <div class="grid-5">
           <div class="logo-sobre">

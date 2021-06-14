@@ -61,3 +61,14 @@
     display: inline-block;
     margin-top: 30px;
 }
+
+.noticia h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.autor-frase-materia {
+    font-size: 1.5em !important;
+    text-align: right;
+}

@@ -7,8 +7,9 @@
       <div class="noticia">
       <section class="container sobre-inicio">
         <div class="grid-7">
-          <p>A comunicação de dados entre sistemas remotos pode ser atingida por meio de um processo denominado rede, envolvendo a conexão de computadores, mídia e dispositivos de rede.</p>
-          <p class="autor-frase-materia">Behrouz A. Fourozan</p>
+          <h1>Comunicação de Dados</h1>
+          <p>"A comunicação de dados entre sistemas remotos pode ser atingida por meio de um processo denominado rede, envolvendo a conexão de computadores, mídia e dispositivos de rede."</p>
+          <p class="autor-frase-materia">- Behrouz A. Fourozan</p>
         </div>
         <div class="grid-5">
           <div class="logo-sobre">
