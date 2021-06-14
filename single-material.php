@@ -15,10 +15,10 @@
         <div class="single-post-content">
           <?php the_content(); ?>
           <?php if(get_field('material_anterior')) { ?>
-            <a href="<?php the_field('material_anterior'); ?>" class="botao-red-cinza botao_materiais">Material Anterior</a>
+            <a href="<?php the_field('material_anterior'); ?>" class="botao-red-cinza botao_materiais">Retornar</a>
           <?php } ?>
           <?php if(get_field('proximo_material')) { ?>
-            <a href="<?php the_field('proximo_material'); ?>" class="botao-red-cinza botao_materiais">Próximo Material</a>
+            <a href="<?php the_field('proximo_material'); ?>" class="botao-red-cinza botao_materiais">Avançar</a>
           <?php } ?>
         </div>
 

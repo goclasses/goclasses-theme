@@ -7,7 +7,8 @@
       <div class="noticia">
       <section class="container sobre-inicio">
         <div class="grid-7">
-          <p>“Número de transistores em um chip vai dobrar a cada 18 meses”. Gordon Moore</p>
+          <p>“Número de transistores em um chip vai dobrar a cada 18 meses”.</p>
+          <p class="autor-frase-materia">Gordon Moore</p>
         </div>
         <div class="grid-5">
           <div class="logo-sobre">
@@ -22,9 +23,9 @@
   <div class="post-types-container">
     <nav>
       <ul>
-        <li><a href="<?php echo get_post_type_archive_link( 'artigo' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">Artigos</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'avaliacao' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">Avaliações</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'plano_ensino' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">Planos de Ensino</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'artigo' ) . '?mat=programacao_paralela_e_distribuida'; ?>">Material de Apoio</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'avaliacao' ) . '?mat=programacao_paralela_e_distribuida'; ?>">Avaliações</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'plano_ensino' ) . '?mat=programacao_paralela_e_distribuida'; ?>">Documentos</a></li>
       </ul>
     </nav>
   </div>

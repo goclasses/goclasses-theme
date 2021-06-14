@@ -7,7 +7,8 @@
       <div class="noticia">
       <section class="container sobre-inicio">
         <div class="grid-7">
-          <p>A comunicação de dados entre sistemas remotos pode ser atingida por meio de um processo denominado rede, envolvendo a conexão de computadores, mídia e dispositivos de rede. Behrouz A. Fourozan</p>
+          <p>A comunicação de dados entre sistemas remotos pode ser atingida por meio de um processo denominado rede, envolvendo a conexão de computadores, mídia e dispositivos de rede.</p>
+          <p class="autor-frase-materia">Behrouz A. Fourozan</p>
         </div>
         <div class="grid-5">
           <div class="logo-sobre">
@@ -22,9 +23,9 @@
   <div class="post-types-container">
     <nav>
       <ul>
-        <li><a href="<?php echo get_post_type_archive_link( 'artigo' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">Artigos</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'avaliacao' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">Avaliações</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'plano_ensino' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">Planos de Ensino</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'artigo' ) . '?mat=comunicacao-de-dados'; ?>">Material de Apoio</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'avaliacao' ) . '?mat=comunicacao-de-dados'; ?>">Avaliações</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'plano_ensino' ) . '?mat=comunicacao-de-dados'; ?>">Documentos</a></li>
       </ul>
     </nav>
   </div>
@@ -34,7 +35,7 @@
     <?php
       $archiveConteudo = new WP_Query(array(
         'post_type' => 'material',
-        'category_name' => 'comunicacao_de_dados',
+        'category_name' => 'comunicacao-de-dados',
         'order' => 'ASC',
         'orderby' => 'title',
         'posts_per_page' => -1,

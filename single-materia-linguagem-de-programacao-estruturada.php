@@ -7,7 +7,8 @@
       <div class="noticia">
       <section class="container sobre-inicio">
         <div class="grid-7">
-          <p>A linguagem C é uma das mais bem sucedidas linguagens de alto nível já criadas e é considerada uma das linguagens de programação mais utilizadas de todos os tempos. André Backes.</p>
+          <p>A linguagem C é uma das mais bem sucedidas linguagens de alto nível já criadas e é considerada uma das linguagens de programação mais utilizadas de todos os tempos.</p>
+          <p class="autor-frase-materia">André Backes</p>
         </div>
         <div class="grid-5">
           <div class="logo-sobre">
@@ -22,9 +23,9 @@
   <div class="post-types-container">
     <nav>
       <ul>
-        <li><a href="<?php echo get_post_type_archive_link( 'artigo' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">Artigos</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'avaliacao' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">Avaliações</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'plano_ensino' ) . '?mat=' . get_post_field( 'post_name', get_post() ); ?>">Planos de Ensino</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'artigo' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Material de Apoio</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'avaliacao' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Avaliações</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'plano_ensino' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Documentos</a></li>
       </ul>
     </nav>
   </div>
