@@ -24,7 +24,7 @@
   <div class="post-types-container">
     <nav>
       <ul>
-        <li><a href="<?php echo get_post_type_archive_link( 'artigo' ) . '?mat=programacao_paralela_e_distribuida'; ?>">Material de Apoio</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=programacao_paralela_e_distribuida'; ?>">Material de Apoio</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'avaliacao' ) . '?mat=programacao_paralela_e_distribuida'; ?>">Avaliações</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'plano_ensino' ) . '?mat=programacao_paralela_e_distribuida'; ?>">Documentos</a></li>
       </ul>

@@ -24,9 +24,11 @@
 					$archiveConteudo->the_post(); 
 		?>
 
-			<div class="grid-12">
-				<div class="single_plano">
-					<a href="<?php the_field('download_pdf'); ?>" target="_blank" class="botao_archive_plano"><?php the_title(); ?></a>
+			<div class="post-page">
+				<div class="grid-12">
+					<div class="info-index-material">
+						<a href="<?php the_field('download_pdf'); ?>"><h2><?php the_title(); ?></h2></a>
+					</div>
 				</div>
 			</div>
 
