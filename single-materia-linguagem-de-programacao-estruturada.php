@@ -26,7 +26,7 @@
       <ul>
         <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Material de Apoio</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'avaliacao' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Avaliações</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'plano_ensino' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Documentos</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Documentos</a></li>
       </ul>
     </nav>
   </div>
