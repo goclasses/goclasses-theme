@@ -57,9 +57,20 @@
     height: 300px;
 }
 
+.single-post-content {
+    position: relative;
+}
+
+.botoes-navegacao {
+    position: absolute;
+    right: 0;
+}
+
 .botao_materiais {
     display: inline-block;
     margin-top: 30px;
+    text-decoration: underline;
+    border: none !important;
 }
 
 .noticia h1 {
