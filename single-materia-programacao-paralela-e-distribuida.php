@@ -24,9 +24,9 @@
   <div class="post-types-container">
     <nav>
       <ul>
-        <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=programacao_paralela_e_distribuida'; ?>">Material de Apoio</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=programacao_paralela_e_distribuida'; ?>">Exercícios</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=programacao_paralela_e_distribuida'; ?>">Documentos</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=programacao-paralela-e-distribuida'; ?>">Material de Apoio</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=programacao-paralela-e-distribuida'; ?>">Exercícios</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=programacao-paralela-e-distribuida'; ?>">Documentos</a></li>
       </ul>
     </nav>
   </div>
@@ -36,7 +36,7 @@
     <?php
       $archiveConteudo = new WP_Query(array(
         'post_type' => 'material',
-        'category_name' => 'programacao_paralela_e_distribuida',
+        'category_name' => 'programacao-paralela-e-distribuida',
         'order' => 'ASC',
         'orderby' => 'title',
         'posts_per_page' => -1,
