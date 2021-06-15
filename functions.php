@@ -159,6 +159,77 @@ function goclasses_post_types() {
     'menu_icon' => 'dashicons-images-alt'
   ));
 
+  register_post_type('projeto_indicacao', array(
+    'capability_type' => 'projeto_indicacao',
+    'map_meta_cap' => true,
+    'supports' => array('title'),
+    'rewrite' => array('slug' => 'projetos_indicacao'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Indicações Projetos',
+      'add_new_item' => 'Adicionar Nova Indicação de Projeto',
+      'edit_item' => 'Editar Indicação de Projeto',
+      'all_items' => 'Todas Indicações de Projeto',
+      'singular_name' => 'Indicação de Projeto'
+    ),
+    'taxonomies' => array('category'),
+    'menu_icon' => 'dashicons-images-alt'
+  ));
+
+  register_post_type('jogo', array(
+    'capability_type' => 'jogo',
+    'map_meta_cap' => true,
+    'supports' => array('title'),
+    'rewrite' => array('slug' => 'jogos'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Jogos',
+      'add_new_item' => 'Adicionar Novo Jogo',
+      'edit_item' => 'Editar Jogo',
+      'all_items' => 'Todos Jogos',
+      'singular_name' => 'Jogo'
+    ),
+    'taxonomies' => array('category'),
+    'menu_icon' => 'dashicons-images-alt'
+  ));
+
+  register_post_type('livro_apostila', array(
+    'capability_type' => 'livro_apostila',
+    'map_meta_cap' => true,
+    'supports' => array('title'),
+    'rewrite' => array('slug' => 'livros_apostilas'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Livros e Apostilas',
+      'add_new_item' => 'Adicionar Novo Livro ou Apostila',
+      'edit_item' => 'Editar Livro ou Apostila',
+      'all_items' => 'Todos Livros e Apostilas',
+      'singular_name' => 'Livro ou Apostila'
+    ),
+    'taxonomies' => array('category'),
+    'menu_icon' => 'dashicons-images-alt'
+  ));
+
+  register_post_type('link', array(
+    'capability_type' => 'link',
+    'map_meta_cap' => true,
+    'supports' => array('title'),
+    'rewrite' => array('slug' => 'links'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Links',
+      'add_new_item' => 'Adicionar Novo Link',
+      'edit_item' => 'Editar Link',
+      'all_items' => 'Todos Links',
+      'singular_name' => 'Link'
+    ),
+    'taxonomies' => array('category'),
+    'menu_icon' => 'dashicons-images-alt'
+  ));
 
   register_post_type('projeto', array(
     'capability_type' => 'projeto',
