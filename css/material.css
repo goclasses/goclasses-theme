@@ -83,3 +83,10 @@
 .autor-frase-materia {
     font-size: 1.5em !important;
 }
+
+.titulo-apoio {
+    font-size: 2em;
+    font-family: 'Varela Round';
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
