@@ -122,7 +122,7 @@
 
 			<?php
 			if ($archiveSlide->have_posts()) { 
-				echo '<h3 class="grid-12 titulo-apoio">Jogos</h3>';
+				echo '<h3 class="grid-12 titulo-apoio">Slides</h3>';
 				while ($archiveSlide->have_posts()) {
 					$archiveSlide->the_post();
 			?>
@@ -146,7 +146,7 @@
 
 			<?php
 			if ($archiveProjeto->have_posts()) { 
-				echo '<h3 class="grid-12 titulo-apoio">Jogos</h3>';
+				echo '<h3 class="grid-12 titulo-apoio">Projetos</h3>';
 				while ($archiveProjeto->have_posts()) {
 					$archiveProjeto->the_post();
 			?>
@@ -194,7 +194,7 @@
 
 			<?php
 			if ($archiveLivroApostila->have_posts()) { 
-				echo '<h3 class="grid-12 titulo-apoio">Jogos</h3>';
+				echo '<h3 class="grid-12 titulo-apoio">Livros ou Apostilas</h3>';
 				while ($archiveLivroApostila->have_posts()) {
 					$archiveLivroApostila->the_post();
 			?>
@@ -218,7 +218,7 @@
 
 			<?php
 			if ($archiveLink->have_posts()) { 
-				echo '<h3 class="grid-12 titulo-apoio">Jogos</h3>';
+				echo '<h3 class="grid-12 titulo-apoio">Links</h3>';
 				while ($archiveLink->have_posts()) {
 					$archiveLink->the_post();
 			?>
