@@ -4,7 +4,7 @@
 
 <section class="cabecalho-index">
   <div>
-    <h1>Avaliações</h1>
+    <h1>Exercícios</h1>
   </div>
 </section> 
 
@@ -27,7 +27,14 @@
 			<div class="post-page">
 				<div class="grid-12">
 					<div class="info-index-material">
-						<a href="<?php the_field('download_pdf'); ?>"><h2><?php the_title(); ?></h2></a>
+						<a href="<?php
+							if(get_field('url_artigo')) {
+								the_field('url_artigo');
+							}
+							if(get_field('arquivo_download')) {
+								the_field('arquivo_download');
+							}
+						?>" target="_blank"><h2><?php the_title(); ?></h2></a>
 					</div>
 				</div>
 			</div>

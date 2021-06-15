@@ -25,7 +25,7 @@
     <nav>
       <ul>
         <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=comunicacao-de-dados'; ?>">Material de Apoio</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'avaliacao' ) . '?mat=comunicacao-de-dados'; ?>">Avaliações</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=comunicacao-de-dados'; ?>">Exercícios</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=comunicacao-de-dados'; ?>">Documentos</a></li>
       </ul>
     </nav>

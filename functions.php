@@ -123,19 +123,19 @@ function goclasses_post_types() {
     'menu_icon' => 'dashicons-book-alt'
   ));
 
-  register_post_type('avaliacao', array(
-    'capability_type' => 'avaliacao',
+  register_post_type('exercicio', array(
+    'capability_type' => 'exercicio',
     'map_meta_cap' => true,
     'supports' => array('title'),
-    'rewrite' => array('slug' => 'avaliacoes'),
+    'rewrite' => array('slug' => 'exercicios'),
     'has_archive' => true,
     'public' => true,
     'labels' => array(
-      'name' => 'Avaliações',
-      'add_new_item' => 'Adicionar Nova Avaliação',
-      'edit_item' => 'Editar Avaliação',
-      'all_items' => 'Todas Avaliações',
-      'singular_name' => 'Avaliação'
+      'name' => 'Exercícios',
+      'add_new_item' => 'Adicionar Novo Exercício',
+      'edit_item' => 'Editar Exercício',
+      'all_items' => 'Todos Exercícios',
+      'singular_name' => 'Exercício'
     ),
     'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-list-view'
