@@ -141,6 +141,25 @@ function goclasses_post_types() {
     'menu_icon' => 'dashicons-list-view'
   ));
 
+  register_post_type('slide', array(
+    'capability_type' => 'slide',
+    'map_meta_cap' => true,
+    'supports' => array('title'),
+    'rewrite' => array('slug' => 'slides'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Slides',
+      'add_new_item' => 'Adicionar Novo Slide',
+      'edit_item' => 'Editar Slide',
+      'all_items' => 'Todos Slides',
+      'singular_name' => 'Slide'
+    ),
+    'taxonomies' => array('category'),
+    'menu_icon' => 'dashicons-images-alt'
+  ));
+
+
   register_post_type('projeto', array(
     'capability_type' => 'projeto',
     'map_meta_cap' => true,

@@ -4,7 +4,7 @@
 
 <section class="cabecalho-index">
   <div>
-    <h1>Exercícios</h1>
+    <h1>Slides</h1>
   </div>
 </section> 
 
