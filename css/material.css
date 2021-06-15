@@ -76,10 +76,10 @@
 .noticia h1 {
     font-size: 2em;
     margin-bottom: 15px;
-    text-decoration: underline;
+    font-family: 'Varela Round';
+    font-weight: bold;
 }
 
 .autor-frase-materia {
     font-size: 1.5em !important;
-    text-align: right;
 }
