@@ -2,11 +2,23 @@
 
 <!-- Começa código da página -->
 
-<section class="cabecalho-index">
-  <div>
-    <h1>Exercícios</h1>
-  </div>
-</section> 
+  <!-- Carrossel Começa -->
+  <section class="carrossel carrossel-projetos">
+      <div class="noticia">
+      <section class="container sobre-inicio">
+        <div class="grid-7">
+          <h1>Exercícios</h1>
+          <p>Para treinar os conhecimentos aprendidos em aula</p>
+        </div>
+        <div class="grid-5">
+          <div class="logo-sobre">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/banner-docs.png" alt="Logo do site GoClasses">
+          </div>
+        </div>
+      </section>
+      </div>
+  </section>
+  <!-- Carrossel termina -->
 
 <!-- post  -->
 <div class="container">

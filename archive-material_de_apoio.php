@@ -2,11 +2,23 @@
 
 <!-- Começa código da página -->
 
-<section class="cabecalho-index">
-  <div>
-		<h1>Material de Apoio</h1>
-  </div>
-</section> 
+  <!-- Carrossel Começa -->
+  <section class="carrossel carrossel-projetos">
+      <div class="noticia">
+      <section class="container sobre-inicio">
+        <div class="grid-7">
+          <h1>Material de Apoio</h1>
+          <p>Somos do curso de ciência da computação da UTFPR Campus Santa Helena.</p>
+        </div>
+        <div class="grid-5">
+          <div class="logo-sobre">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/banner-material-apoio.png" alt="Logo do site GoClasses">
+          </div>
+        </div>
+      </section>
+      </div>
+  </section>
+  <!-- Carrossel termina -->
 
 <?php
 	$archiveConteudo = new WP_Query(array(

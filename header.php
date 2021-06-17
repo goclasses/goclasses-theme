@@ -42,7 +42,6 @@
       
             </ul>
           </li>
-          <li><a href="/projetos">Projetos</a></li>
           <li><a href="/contato">Contato</a></li>
           <?php if(is_user_logged_in()) { ?>
             <li>

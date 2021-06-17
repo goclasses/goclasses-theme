@@ -13,7 +13,7 @@
         </div>
         <div class="grid-5">
           <div class="logo-sobre">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/kisspng-internet-royalty.png" alt="Logo do site GoClasses">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/banner-lpe.png" alt="Logo do site GoClasses">
           </div>
         </div>
       </section>
@@ -27,6 +27,7 @@
         <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Material de Apoio</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Exercícios</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Documentos</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'projeto' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Projetos</a></li>
       </ul>
     </nav>
   </div>

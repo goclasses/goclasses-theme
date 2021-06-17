@@ -13,7 +13,7 @@
         </div>
         <div class="grid-5">
           <div class="logo-sobre">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/kisspng-big-data.png" alt="Logo do site GoClasses">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/banner-cdd.png" alt="Logo do site GoClasses">
           </div>
         </div>
       </section>
@@ -27,6 +27,7 @@
         <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=comunicacao-de-dados'; ?>">Material de Apoio</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=comunicacao-de-dados'; ?>">Exercícios</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=comunicacao-de-dados'; ?>">Documentos</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'projeto' ) . '?mat=comunicacao-de-dados'; ?>">Projetos</a></li>
       </ul>
     </nav>
   </div>

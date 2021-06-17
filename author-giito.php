@@ -59,7 +59,7 @@
         </div>
       </div>
       <div class="carreira_giani">
-        <h2>Carreira</h2>
+        <h2>Projetos Atuais</h2>
 
         <?php
           $projetosGiani = new WP_Query(array(

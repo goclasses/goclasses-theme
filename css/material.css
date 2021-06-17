@@ -48,8 +48,28 @@
     height: 300px;
 }
 
+.carrossel-projetos img {
+    height: 350px;
+}
+
 .carrossel-cdd .grid-7 {
     padding-top: 30px;
+}
+
+.carrossel-contato img {
+    height: 400px;
+}
+
+.carrossel-lpe img {
+    height: 350px;
+}
+
+.carrossel-contato .grid-7 {
+    padding-top: 70px;
+}
+
+.carrossel-projetos .grid-7 {
+    padding-top: 80px;
 }
 
 .carrossel-cdd img {

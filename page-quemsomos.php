@@ -5,23 +5,30 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <section class="cabecalho-contato">
-        <div>
-            <h1>QUEM SOMOS?</h1>
+  <!-- Carrossel Começa -->
+  <section class="carrossel carrossel-projetos">
+      <div class="noticia">
+      <section class="container sobre-inicio">
+        <div class="grid-7">
+          <h1>Quem Somos</h1>
+          <p>Somos do curso de ciência da computação da UTFPR Campus Santa Helena.</p>
         </div>
-    </section>
+        <div class="grid-5">
+          <div class="logo-sobre">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/banner-quemsomos.png" alt="Logo do site GoClasses">
+          </div>
+        </div>
+      </section>
+      </div>
+  </section>
+  <!-- Carrossel termina -->
 
     <section class="container missao_sobre">
-        <div class="grid-7 informativo">
+        <div class="grid-12 informativo">
         <p>Somos uma equipe do projeto para Recursos Educacionais Abertos da UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ.</p> 
         <p>A equipe é coordenada pela professora Giani Carla Ito com participação de acadêmicos do curso de ciência da computação.</p>
         <p>O aluno bolsista Erick Oliveira dos Santos foi o web designer e responsável pelo desenvolvimento do portal.</p>
         <p>Como voluntários ao projeto participaram os alunos Rander Carneiro da UTFPR-SH e José Capina da UTFPR-PG.</p>
-        </div>
-        <div class="grid-3">
-            <div class="icone_equipe">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/meeting.png" alt="Icone Equipe">
-            </div>
         </div>
     </section>
 
