@@ -7,7 +7,11 @@
       <div class="noticia">
       <section class="container sobre-inicio">
         <div class="grid-7">
-          <h1>Material de Apoio</h1>
+          <h1>Material de Apoio <?php
+						if(htmlspecialchars($_GET["mat"]) == 'comunicacao-de-dados') echo 'CDD';
+						if(htmlspecialchars($_GET["mat"]) == 'linguagem-de-programacao-estruturada') echo 'LPE';
+						if(htmlspecialchars($_GET["mat"]) == 'programacao-paralela-e-distribuida') echo 'PPD';
+					?></h1>
           <p>Somos do curso de ciência da computação da UTFPR Campus Santa Helena.</p>
         </div>
         <div class="grid-5">
@@ -19,6 +23,17 @@
       </div>
   </section>
   <!-- Carrossel termina -->
+
+	<div class="post-types-container">
+    <nav>
+      <ul>
+        <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Material de Apoio</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Exercícios</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Documentos</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'projeto' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Projetos</a></li>
+      </ul>
+    </nav>
+  </div>
 
 <?php
 	$archiveConteudo = new WP_Query(array(
@@ -230,7 +245,7 @@
 
 			<?php
 			if ($archiveLink->have_posts()) { 
-				echo '<h3 class="grid-12 titulo-apoio">Links</h3>';
+				echo '<h3 class="grid-12 titulo-apoio">Vídeos ou Podcasts</h3>';
 				while ($archiveLink->have_posts()) {
 					$archiveLink->the_post();
 			?>

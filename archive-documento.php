@@ -7,7 +7,11 @@
       <div class="noticia">
       <section class="container sobre-inicio">
         <div class="grid-7">
-          <h1>Documentos</h1>
+          <h1>Documentos <?php
+						if(htmlspecialchars($_GET["mat"]) == 'comunicacao-de-dados') echo 'CDD';
+						if(htmlspecialchars($_GET["mat"]) == 'linguagem-de-programacao-estruturada') echo 'LPE';
+						if(htmlspecialchars($_GET["mat"]) == 'programacao-paralela-e-distribuida') echo 'PPD';
+					?></h1>
           <p>Documentos como nota de avaliações, planos de aula e de ensino.</p>
         </div>
         <div class="grid-5">
@@ -19,6 +23,17 @@
       </div>
   </section>
   <!-- Carrossel termina -->
+
+	<div class="post-types-container">
+    <nav>
+      <ul>
+        <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Material de Apoio</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Exercícios</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Documentos</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'projeto' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Projetos</a></li>
+      </ul>
+    </nav>
+  </div>
 
 <!-- post  -->
 <div class="container">
