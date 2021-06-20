@@ -46,6 +46,14 @@
     text-align: left;
 }
 
+.post-types-container-typema .links li:hover > ul{
+    top: 520px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
 .post-types-container-cdd .links li:hover > ul{
     top: 540px;
     opacity: 1;

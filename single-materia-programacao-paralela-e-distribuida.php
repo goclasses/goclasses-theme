@@ -24,7 +24,7 @@
   <div class="post-types-container content">
     <nav>
       <ul class="links">
-        <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=programacao-paralela-e-distribuida'; ?>">Material de Apoio</a>
+        <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=programacao-paralela-e-distribuida'; ?>">Material de Apoio</a>
           <ul class="login-ul">
             <li>
               <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=programacao-paralela-e-distribuida' . '&mattype=livros'; ?>">Livros ou Apostilas</a>
