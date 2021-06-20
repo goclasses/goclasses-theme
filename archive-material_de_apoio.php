@@ -143,9 +143,19 @@
 
 ?>
 
+
+
+
+
+
+
+
+
+
+
 <!-- post  -->
 <div class="container">
-	<?php	if($archiveConteudo->have_posts()){ ?>
+	<?php	if($archiveConteudo->have_posts() && !htmlspecialchars($_GET["mattype"])){ ?>
 
 			<?php
 			if ($archiveSlide->have_posts()) { 
@@ -267,7 +277,174 @@
 
 			<?php } } ?>
 
-	<?php } else { ?>
+	<?php } else if (htmlspecialchars($_GET["mattype"])){ ?>
+			
+
+
+
+
+
+
+
+		<?php
+			if ($archiveSlide->have_posts() && htmlspecialchars($_GET["mattype"]) == 'slides') { 
+				echo '<h3 class="grid-12 titulo-apoio">Slides</h3>';
+				while ($archiveSlide->have_posts()) {
+					$archiveSlide->the_post();
+			?>
+
+			<div class="post-page">
+				<div class="grid-12">
+					<div class="info-index-material">
+						<a href="<?php
+							if(get_field('url_artigo')) {
+								the_field('url_artigo');
+							}
+							if(get_field('arquivo_download')) {
+								the_field('arquivo_download');
+							}
+						?>" target="_blank"><h2><?php the_title(); ?></h2></a>
+					</div>
+				</div>
+			</div>
+
+			<?php } } else if (htmlspecialchars($_GET["mattype"]) == 'slides') { ?>
+
+				<div class="imagem-sem-conteudo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/no-data-amico.svg" alt="">
+				</div>
+
+			<?php } ?>
+
+			<?php
+			if ($archiveProjeto->have_posts() && htmlspecialchars($_GET["mattype"]) == 'projetos') { 
+				echo '<h3 class="grid-12 titulo-apoio">Projetos</h3>';
+				while ($archiveProjeto->have_posts()) {
+					$archiveProjeto->the_post();
+			?>
+
+			<div class="post-page">
+				<div class="grid-12">
+					<div class="info-index-material">
+						<a href="<?php
+							if(get_field('url_artigo')) {
+								the_field('url_artigo');
+							}
+							if(get_field('arquivo_download')) {
+								the_field('arquivo_download');
+							}
+						?>" target="_blank"><h2><?php the_title(); ?></h2></a>
+					</div>
+				</div>
+			</div>
+
+			<?php } } else if (htmlspecialchars($_GET["mattype"]) == 'projetos') { ?>
+
+				<div class="imagem-sem-conteudo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/no-data-amico.svg" alt="">
+				</div>
+
+			<?php } ?>
+
+			<?php
+			if ($archiveJogo->have_posts() && htmlspecialchars($_GET["mattype"]) == 'jogos') { 
+				echo '<h3 class="grid-12 titulo-apoio">Jogos</h3>';
+				while ($archiveJogo->have_posts()) {
+					$archiveJogo->the_post();
+			?>
+
+			<div class="post-page">
+				<div class="grid-12">
+					<div class="info-index-material">
+						<a href="<?php
+							if(get_field('url_artigo')) {
+								the_field('url_artigo');
+							}
+							if(get_field('arquivo_download')) {
+								the_field('arquivo_download');
+							}
+						?>" target="_blank"><h2><?php the_title(); ?></h2></a>
+					</div>
+				</div>
+			</div>
+
+			<?php } } else if (htmlspecialchars($_GET["mattype"]) == 'jogos') { ?>
+
+				<div class="imagem-sem-conteudo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/no-data-amico.svg" alt="">
+				</div>
+
+			<?php } ?>
+
+			<?php
+			if ($archiveLivroApostila->have_posts() && htmlspecialchars($_GET["mattype"]) == 'livros') { 
+				echo '<h3 class="grid-12 titulo-apoio">Livros ou Apostilas</h3>';
+				while ($archiveLivroApostila->have_posts()) {
+					$archiveLivroApostila->the_post();
+			?>
+
+			<div class="post-page">
+				<div class="grid-12">
+					<div class="info-index-material">
+						<a href="<?php
+							if(get_field('url_artigo')) {
+								the_field('url_artigo');
+							}
+							if(get_field('arquivo_download')) {
+								the_field('arquivo_download');
+							}
+						?>" target="_blank"><h2><?php the_title(); ?></h2></a>
+					</div>
+				</div>
+			</div>
+
+			<?php } } else if (htmlspecialchars($_GET["mattype"]) == 'livros') { ?>
+
+				<div class="imagem-sem-conteudo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/no-data-amico.svg" alt="">
+				</div>
+
+			<?php } ?>
+
+			<?php
+			if ($archiveLink->have_posts() && htmlspecialchars($_GET["mattype"]) == 'videos') { 
+				echo '<h3 class="grid-12 titulo-apoio">Vídeos ou Podcasts</h3>';
+				while ($archiveLink->have_posts()) {
+					$archiveLink->the_post();
+			?>
+
+			<div class="post-page">
+				<div class="grid-12">
+					<div class="info-index-material">
+						<a href="<?php
+							if(get_field('url_artigo')) {
+								the_field('url_artigo');
+							}
+							if(get_field('arquivo_download')) {
+								the_field('arquivo_download');
+							}
+						?>" target="_blank"><h2><?php the_title(); ?></h2></a>
+					</div>
+				</div>
+			</div>
+
+			<?php } } else if (htmlspecialchars($_GET["mattype"]) == 'videos') { ?>
+
+				<div class="imagem-sem-conteudo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/no-data-amico.svg" alt="">
+				</div>
+
+			<?php } ?>
+
+
+
+
+
+
+
+
+
+	<?php } else if (!$archiveConteudo->have_posts()){ ?>
 		<div class="imagem-sem-conteudo">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/no-data-amico.svg" alt="">
 		</div>

@@ -21,17 +21,17 @@
   </section>
   <!-- Carrossel termina -->
 
-  <div class="post-types-container">
+  <div class="post-types-container post-types-container-cdd content">
     <nav>
-      <ul>
+      <ul class="links">
         <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=comunicacao-de-dados'; ?>">Material de Apoio</a>
           <ul class="login-ul">
             <li>
-              <a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=comunicacao-de-dados' . '&mattype=livros'; ?>">Livros ou Apostilas</a>
-              <a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=comunicacao-de-dados' . '&mattype=videos'; ?>">Vídeos ou Podcasts</a>
-              <a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=comunicacao-de-dados' . '&mattype=slides'; ?>">Slides</a>
-              <a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=comunicacao-de-dados' . '&mattype=projetos'; ?>">Projetos</a>
-              <a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=comunicacao-de-dados' . '&mattype=jogos'; ?>">Jogos</a>
+              <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=comunicacao-de-dados' . '&mattype=livros'; ?>">Livros ou Apostilas</a>
+              <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=comunicacao-de-dados' . '&mattype=videos'; ?>">Vídeos ou Podcasts</a>
+              <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=comunicacao-de-dados' . '&mattype=slides'; ?>">Slides</a>
+              <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=comunicacao-de-dados' . '&mattype=projetos'; ?>">Projetos</a>
+              <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=comunicacao-de-dados' . '&mattype=jogos'; ?>">Jogos</a>
             </li>
           </ul>
         </li>
