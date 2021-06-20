@@ -11,18 +11,40 @@
 }
 
 .post-types-container a {
-    color: white;
-    font-size: 1.25em;
-    text-transform: uppercase;
+    color: white !important;
+    font-size: 1.25em !important;
+    text-transform: uppercase !important;
 }
 
 .post-types-container a:hover {
-    color: yellow;
+    color: yellow !important;
+    background: none !important;
 }
 
 .post-types-container li {
-    display: inline-block;
-    padding: 0 15px;
+    display: inline-block !important;
+    padding: 0 15px !important;
+}
+
+.post-types-container .links ul{
+    position: absolute;
+    background: #013;
+    top: 400px;
+    z-index: 98;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .post-types-container .links ul li a{
+      font-size: 1em !important;
+  }
+
+.post-types-container .links li:hover > ul{
+    top: 470px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    text-align: left;
 }
 
 .carrossel-lpe p, .carrossel-lpe p:first-child,

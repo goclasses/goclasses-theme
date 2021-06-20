@@ -50,7 +50,7 @@
                 echo home_url() . '/author/' . $user->user_login;
               ?>"><?php echo $user->display_name; ?></a>
               <input type="checkbox" id="show-user">
-              <label for="show-user">Erick</label>
+              <label for="show-user"><?php echo $user->display_name; ?></label>
               <ul class="login-ul">
                 <li><a href="<?php 
                   $allowed_roles = array('administrator');

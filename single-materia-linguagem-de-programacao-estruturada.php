@@ -24,7 +24,17 @@
   <div class="post-types-container">
     <nav>
       <ul>
-        <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Material de Apoio</a></li>
+        <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Material de Apoio</a>
+          <ul class="login-ul">
+            <li>
+              <a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=linguagem-de-programacao-estruturada' . '&mattype=livros'; ?>">Livros ou Apostilas</a>
+              <a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=linguagem-de-programacao-estruturada' . '&mattype=videos'; ?>">Vídeos ou Podcasts</a>
+              <a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=linguagem-de-programacao-estruturada' . '&mattype=slides'; ?>">Slides</a>
+              <a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=linguagem-de-programacao-estruturada' . '&mattype=projetos'; ?>">Projetos</a>
+              <a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=linguagem-de-programacao-estruturada' . '&mattype=jogos'; ?>">Jogos</a>
+            </li>
+          </ul>
+        </li>
         <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Exercícios</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Documentos</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'projeto' ) . '?mat=linguagem-de-programacao-estruturada'; ?>">Projetos</a></li>
