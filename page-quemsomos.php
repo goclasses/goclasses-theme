@@ -23,25 +23,7 @@
     </section>
 
     <section class="perfil_equipe">
-        <div class="container">
-            <div class="grid-12">
-                <a href="<?php 
-                    $user = get_user_by('slug','giito');
-                    echo get_author_posts_url($user->ID); 
-                ?>">
-                    <div class="ajuste_prof">
-                        <img class="teste" src="<?php echo get_template_directory_uri(); ?>/img/perfil-Giani.png" alt="">
-                        <h2>Giani Carla Ito</h2>
-                        <h3>PROFESSORA</h3>
-                            <div class="perfil_devs">
-                                <a href="<?php the_field('linkedin_perfil0', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
-                                <a href="<?php the_field('lattes_perfil0', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
-                            </div>
-                        <p>Professora do Curso de Ciência da Computação da UTFPR-SH e coordenadora do projeto Plataforma Web para GoCLasses</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+
 
         <div class="container">
 
@@ -51,15 +33,29 @@
                 <h3>ALUNO</h3>
                 <div class="perfil_devs">
 
-                <a href="<?php the_field('linkedin_perfil1', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
-
-                <a href="<?php the_field('lattes_perfil1', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png" alt=""></a>
+                    <a href="<?php the_field('linkedin_perfil1', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
+                    <a href="<?php the_field('lattes_perfil1', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png" alt=""></a>
                     
                 </div>
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, responsável pelo back-end, front-end e bolsista no projeto</p>
             </div>
 
             <div class="grid-4 perfil-2">
+                <a href="<?php 
+                    $user = get_user_by('slug','giito');
+                    echo get_author_posts_url($user->ID); ?>">
+                        <img class="teste" src="<?php echo get_template_directory_uri(); ?>/img/QS/geani.png" alt="">
+                        <h2>Giani Carla Ito</h2>
+                        <h3>PROFESSORA</h3>
+                            <div class="perfil_devs">
+                                <a href="<?php the_field('linkedin_perfil0', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
+                                <a href="<?php the_field('lattes_perfil0', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
+                            </div>
+                        <p>Professora do Curso de Ciência da Computação da UTFPR-SH e coordenadora do projeto Plataforma Web para GoCLasses</p>
+                </a>
+            </div>
+
+            <div class="grid-4 perfil-3">
                 <img class="teste"  src="<?php echo get_template_directory_uri(); ?>/img/perfil-rander.png" alt="">
                 <h2>Rander Carneiro</h2>
                 <h3>ALUNO</h3>
@@ -73,20 +69,6 @@
                 <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, ajuda no desenvolvimento da parte de Web-Design do site auxiliando no front-end.</p>
             </div>
 
-
-            <div class="grid-4 perfil-4">
-                <img class="teste"  src="<?php echo get_template_directory_uri(); ?>/img/perfil-jose.png" alt="">
-                <h2>José Lohame Capinga</h2>
-                <h3>ALUNO</h3>
-                <div class="perfil_devs">
-
-                <a href="<?php the_field('linkedin_perfil4', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
-
-                <a href="<?php the_field('lattes_perfil4', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
-                    
-                </div>
-                <p>Graduando em Ciência da Computação na UTFPR – Santa Helena, entusiasta em educação, matemática e desenvolvimento web front-end.</p>
-            </div>
         </div>
     </section>
 
