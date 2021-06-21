@@ -51,37 +51,37 @@ function goclasses_post_types() {
     'menu_icon' => 'dashicons-edit-page'
   ));
 
-  register_post_type('artigo', array(
-    'capability_type' => 'artigo',
+  register_post_type('material_de_apoio', array(
+    'capability_type' => 'material_de_apoio',
     'map_meta_cap' => true,
-    'supports' => array('title', 'editor'),
-    'rewrite' => array('slug' => 'artigos'),
+    'supports' => array('title'),
+    'rewrite' => array('slug' => 'material_de_apoio'),
     'has_archive' => true,
     'public' => true,
     'labels' => array(
-      'name' => 'Artigos',
-      'add_new_item' => 'Adicionar Novo Artigo',
-      'edit_item' => 'Editar Artigo',
-      'all_items' => 'Todos Artigos',
-      'singular_name' => 'Artigo'
+      'name' => 'Materiais de Apoio',
+      'add_new_item' => 'Adicionar Novo Material de Apoio',
+      'edit_item' => 'Editar Material de Apoio',
+      'all_items' => 'Todos Materiais de Apoio',
+      'singular_name' => 'Material de Apoio'
     ), 
     'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-text-page'
   ));
 
-  register_post_type('plano_ensino', array(
-    'capability_type' => 'plano_ensino',
+  register_post_type('documento', array(
+    'capability_type' => 'documento',
     'map_meta_cap' => true,
     'supports' => array('title'),
-    'rewrite' => array('slug' => 'planos_ensino'),
+    'rewrite' => array('slug' => 'documentos'),
     'has_archive' => true,
     'public' => true,
     'labels' => array(
-      'name' => 'Planos de Ensino',
-      'add_new_item' => 'Adicionar Novo Plano de Ensino',
-      'edit_item' => 'Editar Plano de Ensino',
-      'all_items' => 'Todos Planos de Ensino',
-      'singular_name' => 'Plano de Ensino'
+      'name' => 'Documentos',
+      'add_new_item' => 'Adicionar Novo Documento',
+      'edit_item' => 'Editar Documento',
+      'all_items' => 'Todos Documentos',
+      'singular_name' => 'Documento'
     ),
     'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-analytics'
@@ -123,19 +123,19 @@ function goclasses_post_types() {
     'menu_icon' => 'dashicons-book-alt'
   ));
 
-  register_post_type('avaliacao', array(
-    'capability_type' => 'avaliacao',
+  register_post_type('exercicio', array(
+    'capability_type' => 'exercicio',
     'map_meta_cap' => true,
     'supports' => array('title'),
-    'rewrite' => array('slug' => 'avaliacoes'),
+    'rewrite' => array('slug' => 'exercicios'),
     'has_archive' => true,
     'public' => true,
     'labels' => array(
-      'name' => 'Avaliações',
-      'add_new_item' => 'Adicionar Nova Avaliação',
-      'edit_item' => 'Editar Avaliação',
-      'all_items' => 'Todas Avaliações',
-      'singular_name' => 'Avaliação'
+      'name' => 'Exercícios',
+      'add_new_item' => 'Adicionar Novo Exercício',
+      'edit_item' => 'Editar Exercício',
+      'all_items' => 'Todos Exercícios',
+      'singular_name' => 'Exercício'
     ),
     'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-list-view'
@@ -173,6 +173,24 @@ function goclasses_post_types() {
       'singular_name' => 'Projeto da Giani'
     ),
     'menu_icon' => 'dashicons-welcome-learn-more'
+  ));
+  
+  register_post_type('aluno_destaque', array(
+    'capability_type' => 'aluno_destaque',
+    'map_meta_cap' => true,
+    'supports' => array('title', 'editor'),
+    'rewrite' => array('slug' => 'alunos_destaque'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Alunos Destaques',
+      'add_new_item' => 'Adicionar Novo Aluno Destaque',
+      'edit_item' => 'Editar Aluno Destaque',
+      'all_items' => 'Todos Alunos Destaque',
+      'singular_name' => 'Aluno Destaque'
+    ),
+    'taxonomies' => array('category'),
+    'menu_icon' => 'dashicons-groups'
   ));
 }
 

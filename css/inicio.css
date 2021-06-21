@@ -1,42 +1,23 @@
 /* Carrossel */
 
-.carrossel {
-  color: #fff;
-  background: #001133;
-}
-
-.carrossel h2 {
-  font-family: 'Varela Round';
-  font-size: 2.25em;
-  margin-top: 90px;
-}
-
-.carrossel p {
-  font-size: 0.875em;
-  margin: 20px 0 40px 0;
-  max-width: 350px;
-}
-
-.carrossel > div {
-  height: 420px;
+.noticia {
+  background: #f0f5ff;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 /* Sobre */
 
 .sobre-inicio {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
-.sobre-inicio h2 {
-  font-family: 'Varela Round';
-  font-size: 2.25em;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+.sobre-inicio p:first-child {
+  margin-top: 90px;
 }
-
 .sobre-inicio p {
-  font-size: 1.125em;
-  max-width: 450px;
+  font-size: 2em;
+  max-width: 80%;
 }
 
 .logo-sobre img {
@@ -48,8 +29,7 @@
 /* Materiais */
 
 .materiais-inicio {
-  background: #013;
-  color: #fff;
+  color: #121314;
   padding: 30px 0;
 }
 
@@ -66,9 +46,16 @@
   padding-bottom: 60px;
 }
 
+.imagem-material img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
 .material-individual {
-  padding: 30px 0;
-  border: 2px solid #fff;
+  padding: 0 0 30px 0;
+  border: 2px solid #121314;
   border-radius: 20px;
   text-align: center;
   display: inline-block;
@@ -76,11 +63,12 @@
   height: 300px;
 }
 
-.imagem-material img {
-  display: block;
-  margin: 0 auto 30px auto;
-  height: 90px;
-  width: 90px;
+.material-individual:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.pessoa-destaque-box:hover {
+  box-shadow: none;
 }
 
 .material-individual h3 {
@@ -94,7 +82,7 @@
 }
 
 div.materiais-3 div.grid-4:nth-child(3n - 1) > div {
-  display: block  ;
+  display: table;
   margin: 0 auto;
 }
 
@@ -102,53 +90,26 @@ div.materiais-3 div.grid-4:nth-child(3n + 3) > div {
   float: right;
 }
 
-/* Ultimos */
+/* Pessoa */
 
-.ultimos {
-  padding: 60px 0;
+.pessoas-destaque-container {
+  background: #f0f5ff;
 }
 
-.ultimos h2 {
-  text-transform: uppercase;
-  font-family: 'Varela Round';
-  font-size: 1.5em;
-  display: inline-block;
+.pessoa-destaque img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-.ultimos h2::after {
-  content: '';
-  display: block;
-  height: 1px;
-  width: auto;
-  background: #121314;
+.pessoa-destaque .destaque-nome {
+  text-align: center;
+  font-size: 1.825em;
 }
 
-.ultimos h3 {
-  text-transform: uppercase;
-  font-family: 'Varela Round';
-  font-size: 1.125em;
-}
-
-.ultimo-po-individual {
-  margin-top: 30px;
-  max-width: 250px;
-  padding-left: 10px;
-  border-left: 1px solid #121314;
-}
-
-.ultimo-po-individual a {
-  margin: 10px 0;
-}
-
-.ultimo-post-ind-info {
-  margin: 5px 0;
-  color: #28292C;
-  font-style: italic;
-  font-size: 0.875em;
-}
-
-.ultimo-post-ind-desc {
-  margin: 10px 0;
+.pessoa-destaque-box {
+  border: none;
 }
 
 /* Responsivo */
@@ -163,8 +124,12 @@ div.materiais-3 div.grid-4:nth-child(3n + 3) > div {
 /* Smartphone */
 @media (max-width: 739px) {
 
-  .carrossel > div {
-    height: 480px;
+  .carrossel h2 {
+    font-size: 1.5em;
+  }
+
+  .carrossel p {
+    font-size: 1.5em;
   }
 
   .sobre-inicio h2 {

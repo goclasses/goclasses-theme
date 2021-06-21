@@ -6,15 +6,16 @@
 
 <section class="cabecalho-contato">
   <div>
-    <h1>MATERIAIS PARA AS DICIPLINAS DE...</h1>
+    <h1>MATERIAIS DIDÁTICOS</h1>
   </div>
 </section>
 
 <!-- Materiais começa -->
-<section class="archive-materia">
-  <div class="container materiais-3-archive">
+<section class="materiais-inicio">
+  <div class="container materiais-3">
   <?php
     $homepageMaterias = new WP_Query(array(
+      'posts_per_page' => 3,
       'post_type' => 'materia'
     ));
 
@@ -22,21 +23,16 @@
       $homepageMaterias->the_post(); ?>
 
       <div class="grid-4">
-        <div class="material-individual-archive">  
+        <div class="material-individual">  
           <div class="imagem-material">
             <a href="<?php the_permalink(); ?>">
-            <img src="<?php 
+              <img src="<?php 
                 $value = get_field('icone_materia');
-                if( $value ) {
-                  echo $value;
-                } else {
-                  echo get_template_directory_uri() . '/img/caderno.svg';
-                }
-              ?>" alt="Ícone da Matéria <?php the_title(); ?>">
+                echo $value;
+              ?>" alt="Imagem da Matéria <?php the_title(); ?>">
             </a>
           </div>
           <h3><?php the_title(); ?></h3>
-          <a href="<?php the_permalink(); ?>" class="botao-red">Saiba mais</a>
         </div>
       </div>
 

@@ -35,8 +35,19 @@
   height: 200px;
 }
 
+.info-index-material {
+  border-left: 2px solid #000;
+  padding: 0 15px;
+  height: auto;
+}
+
 .info-index h2 {
   font-size: 1.5em;
+  font-family: 'Varela Round';
+}
+
+.info-index-material h2 {
+  font-size: 1.25em;
   font-family: 'Varela Round';
 }
 

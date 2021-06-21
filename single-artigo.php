@@ -11,16 +11,6 @@
       ?>
 
         <h1><?php the_title(); ?></h1>
-        <p class="info-single-post"><?php the_author_meta( 'nicename'); ?> - <?php the_date('d/m/Y'); ?></p>
-
-        <div class="imagem-single-post"><img src="<?php 
-          $value = get_field('imagem');
-          if( $value ) {
-            echo $value;
-          } else {
-            echo get_template_directory_uri() . '/img/imagem-pc.jpg';
-          }
-        ?>" alt="Post <?php the_title(); ?>"></div>
 
         <div class="single-post-content">
           <?php the_content(); ?>

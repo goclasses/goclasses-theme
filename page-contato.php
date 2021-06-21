@@ -7,11 +7,23 @@
 
 <!-- Começa código da página -->
 
-<section class="cabecalho-contato">
-  <div>
-    <h1><?php the_title(); ?></h1>
-  </div>
-</section>
+  <!-- Carrossel Começa -->
+  <section class="carrossel carrossel-contato">
+      <div class="noticia">
+      <section class="container sobre-inicio">
+        <div class="grid-7">
+          <h1>Contato</h1>
+          <p>Queremos ouvir as suas dúvidas ou sugestões. Fique à vontade para nos enviar uma mensagem e em breve entraremos em contato.</p>
+        </div>
+        <div class="grid-5">
+          <div class="logo-sobre">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/banner-contact.png" alt="Logo do site GoClasses">
+          </div>
+        </div>
+      </section>
+      </div>
+  </section>
+  <!-- Carrossel termina -->
 
 <section class="contato container">
   <form action="<?php echo get_template_directory_uri(); ?>/enviar.php" id="form_contato" method="post" class="contato_form grid-6 formphp">
