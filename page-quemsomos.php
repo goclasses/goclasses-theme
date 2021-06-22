@@ -33,30 +33,6 @@
     </section>
 
     <section class="perfil_equipe">
-<<<<<<< HEAD
-
-=======
-        <div class="container">
-            <div class="grid-12">
-                <a href="<?php 
-                    $user = get_user_by('slug','giito');
-                    echo get_author_posts_url($user->ID); 
-                ?>">
-                    <div class="ajuste_prof">
-                        <img class="teste" src="<?php echo get_template_directory_uri(); ?>/img/perfil-Giani.png" alt="">
-                        <h2>Giani Carla Ito</h2>
-                        <h3>PROFESSORA</h3>
-                            <div class="perfil_devs">
-                                <a href="<?php the_field('linkedin_perfil0', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
-                                <a href="<?php the_field('lattes_perfil0', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
-                            </div>
-                        <p>Professora do Curso de Ciência da Computação da UTFPR-SH e coordenadora do projeto Portal da Programação GoClasses.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
->>>>>>> 9f42f7face9521416fbd82243143e6e2c187636a
-
         <div class="container">
 
             <div class="grid-4 perfil-1">
@@ -100,24 +76,6 @@
                 </div>
                 <p>Graduando em Ciência da Computação na UTFPR–SH. Aluno voluntário do projeto, colaborou com o design do portal.</p>
             </div>
-
-<<<<<<< HEAD
-=======
-
-            <div class="grid-4 perfil-4">
-                <img class="teste"  src="<?php echo get_template_directory_uri(); ?>/img/perfil-jose.png" alt="">
-                <h2>José Lohame Capinga</h2>
-                <h3>ALUNO</h3>
-                <div class="perfil_devs">
-
-                <a href="<?php the_field('linkedin_perfil4', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/likedin2.png" alt=""></a>
-
-                <a href="<?php the_field('lattes_perfil4', $QuemSomos); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/QS/lattes2.png"  alt=""></a>
-                    
-                </div>
-                <p>Graduando em Ciência da Computação na UTFPR–PG. Aluno voluntário do projeto colaborou com a inserção e elaboração do conteúdo do portal.</p>
-            </div>
->>>>>>> 9f42f7face9521416fbd82243143e6e2c187636a
         </div>
     </section>
 
