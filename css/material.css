@@ -11,69 +11,32 @@
 }
 
 .post-types-container a {
-    color: white !important;
-    font-size: 1.25em !important;
-    text-transform: uppercase !important;
+    color: white;
+    font-size: 1.25em;
+    text-transform: uppercase;
 }
 
-.post-types-container a:hover {
-    color: yellow !important;
-    background: none !important;
+.post-types-container a:hover,
+.post-types-container-material-apoio a:hover {
+    color: yellow;
+    background: none;
 }
 
-.post-types-container li {
-    display: inline-block !important;
-    padding: 0 15px !important;
+.post-types-container li, .post-types-container-material-apoio li  {
+    display: inline-block;
+    padding: 0 15px;
 }
 
-.post-types-container .links ul{
-    background: #013;
-    top: 400px;
-    z-index: 98;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .post-types-container .links ul li a{
-      font-size: 1em !important;
-      padding: 5px;
-  }
-
-  .post-types-container .links ul.login-ul li{
-    padding: 0;
-    margin: 0;
+.post-types-container-material-apoio {
+    background: rgb(2, 59, 173);
+    text-align: center;
+    padding: 10px 0;
 }
 
-.post-types-container .links li:hover > ul{
-    top: 470px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
-    text-align: left;
-}
-
-.post-types-container-typema .links li:hover > ul{
-    top: 520px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
-    text-align: left;
-}
-
-.post-types-container-cdd .links li:hover > ul{
-    top: 540px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
-    text-align: left;
-}
-
-.post-types-container-lpe .links li:hover > ul{
-    top: 510px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
-    text-align: left;
+.post-types-container-material-apoio a {
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 .carrossel-lpe p, .carrossel-lpe p:first-child,

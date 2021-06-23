@@ -24,19 +24,10 @@
   </section>
   <!-- Carrossel termina -->
 
-  <div class="post-types-container post-types-container-typema content">
+  <div class="post-types-container">
     <nav>
-      <ul class="links">
+      <ul>
         <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Material de Apoio</a>
-          <ul class="login-ul">
-            <li>
-              <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]) . '&mattype=livros'; ?>">Livros ou Apostilas</a>
-              <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]) . '&mattype=videos'; ?>">Vídeos ou Podcasts</a>
-              <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]) . '&mattype=slides'; ?>">Slides</a>
-              <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]) . '&mattype=projetos'; ?>">Projetos</a>
-              <a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]) . '&mattype=jogos'; ?>">Jogos</a>
-            </li>
-          </ul>
         </li>
         <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Exercícios</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=' . htmlspecialchars($_GET["mat"]); ?>">Documentos</a></li>
@@ -44,6 +35,20 @@
       </ul>
     </nav>
   </div>
+
+	<div class="post-types-container-material-apoio">
+    <nav>
+      <ul>
+				<li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]) . '&mattype=livros'; ?>">Livros ou Apostilas</a></li>
+				<li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]) . '&mattype=videos'; ?>">Vídeos ou Podcasts</a></li>
+				<li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]) . '&mattype=slides'; ?>">Slides</a></li>
+				<li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]) . '&mattype=projetos'; ?>">Projetos</a></li>
+				<li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=' . htmlspecialchars($_GET["mat"]) . '&mattype=jogos'; ?>">Jogos</a></li>
+      </ul>
+    </nav>
+  </div>
+
+							
 
 <?php
 	$archiveConteudo = new WP_Query(array(
