@@ -22,9 +22,14 @@
     background: none;
 }
 
-.post-types-container li, .post-types-container-material-apoio li  {
+.post-types-container li {
     display: inline-block;
     padding: 0 15px;
+}
+
+.post-types-container-material-apoio li  {
+    display: inline-block;
+    padding: 0 10px;
 }
 
 .post-types-container-material-apoio {
@@ -36,7 +41,7 @@
 .post-types-container-material-apoio a {
     color: white;
     font-size: 1em;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .carrossel-lpe p, .carrossel-lpe p:first-child,
