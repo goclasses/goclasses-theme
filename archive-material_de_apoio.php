@@ -12,7 +12,7 @@
 						if(htmlspecialchars($_GET["mat"]) == 'linguagem-de-programacao-estruturada') echo 'LPE';
 						if(htmlspecialchars($_GET["mat"]) == 'programacao-paralela-e-distribuida') echo 'PPD';
 					?></h1>
-          <p>Somos do curso de ciência da computação da UTFPR Campus Santa Helena.</p>
+          <p>Neste espaço você encontra os Materiais de Apoio para o estudo das disciplinas.</p>
         </div>
         <div class="grid-5">
           <div class="logo-sobre">

@@ -12,7 +12,8 @@
 						if(htmlspecialchars($_GET["mat"]) == 'linguagem-de-programacao-estruturada') echo 'LPE';
 						if(htmlspecialchars($_GET["mat"]) == 'programacao-paralela-e-distribuida') echo 'PPD';
 					?></h1>
-          <p>Para treinar os conhecimentos aprendidos em aula</p>
+          <p>“É fazendo que se aprende a fazer aquilo que se deve aprender a fazer”.</p>
+          <p class="autor-frase-materia">- Aristóteles</p>
         </div>
         <div class="grid-5">
           <div class="logo-sobre">
