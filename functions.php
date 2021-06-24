@@ -155,6 +155,7 @@ function goclasses_post_types() {
       'all_items' => 'Todos Projetos',
       'singular_name' => 'Projeto'
     ),
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-portfolio'
   ));
 
