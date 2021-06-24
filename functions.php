@@ -144,7 +144,7 @@ function goclasses_post_types() {
   register_post_type('projeto', array(
     'capability_type' => 'projeto',
     'map_meta_cap' => true,
-    'supports' => array('title', 'editor'),
+    'supports' => array('title'),
     'rewrite' => array('slug' => 'projetos'),
     'has_archive' => true,
     'public' => true,
