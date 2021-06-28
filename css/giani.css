@@ -120,6 +120,11 @@
   font-size: 1.125em;
 }
 
+.carreira_giani a {
+  color: white;
+  text-decoration: underline;
+}
+
 @media (max-width: 739px) {
   .giani-info {
     padding-left: 5%;

@@ -33,7 +33,7 @@
 }
 
 .post-types-container-material-apoio {
-    background: rgb(2, 59, 173);
+    background: #0d2b66;
     text-align: center;
     padding: 10px 0;
 }
@@ -41,7 +41,7 @@
 .post-types-container-material-apoio a {
     color: white;
     font-size: 1em;
-    text-transform: lowercase;
+    text-transform: initial;
 }
 
 .carrossel-lpe p, .carrossel-lpe p:first-child,
