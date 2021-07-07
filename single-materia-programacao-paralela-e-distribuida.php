@@ -26,7 +26,6 @@
       <ul>
         <li><a href="<?php echo get_post_type_archive_link( 'material_de_apoio' ) . '?mat=programacao-paralela-e-distribuida'; ?>">Material de Apoio</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'exercicio' ) . '?mat=programacao-paralela-e-distribuida'; ?>">Exercícios</a></li>
-        <li><a href="<?php echo get_post_type_archive_link( 'documento' ) . '?mat=programacao-paralela-e-distribuida'; ?>">Documentos</a></li>
         <li><a href="<?php echo get_post_type_archive_link( 'projeto' ) . '?mat=programacao-paralela-e-distribuida'; ?>">Projetos</a></li>
       </ul>
     </nav>

@@ -69,24 +69,6 @@ function goclasses_post_types() {
     'menu_icon' => 'dashicons-text-page'
   ));
 
-  register_post_type('documento', array(
-    'capability_type' => 'documento',
-    'map_meta_cap' => true,
-    'supports' => array('title'),
-    'rewrite' => array('slug' => 'documentos'),
-    'has_archive' => true,
-    'public' => true,
-    'labels' => array(
-      'name' => 'Documentos',
-      'add_new_item' => 'Adicionar Novo Documento',
-      'edit_item' => 'Editar Documento',
-      'all_items' => 'Todos Documentos',
-      'singular_name' => 'Documento'
-    ),
-    'taxonomies' => array('category'),
-    'menu_icon' => 'dashicons-analytics'
-  ));
-
   register_post_type('video_aula', array(
     'capability_type' => 'video_aula',
     'map_meta_cap' => true,
